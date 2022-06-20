@@ -11,6 +11,8 @@
 *.cb
 *.cb2
 .*.lb
+aaltologo.sty
+aaltoseries.cls
 
 ## Intermediate documents:
 *.dvi
