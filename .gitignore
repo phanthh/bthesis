@@ -13,6 +13,7 @@
 .*.lb
 aaltologo.sty
 aaltoseries.cls
+*.xmpdata
 
 ## Intermediate documents:
 *.dvi
