@@ -285,17 +285,118 @@
 
 \section{Motivation}
 
-Deep learning has exploded in popularity in recent years due to its effectiveness in capturing hidden patterns of Euclidean data such as images, audio and natural languages. However, not all data can be represented in Euclidean space \cite{bronsteinGeometricDeepLearning2017}.  There is an increasing number of application for data that are represented as discrete graphs: sets of nodes and edges that can directly model abstract relations between objects. For example, molecules are essentially connected atoms, bounded to one another by chemical bonds; users-products graphs are bipartite graphs that imply preferences of a customer towards specific sets of products; citation networks represents citationships between academic papers and inter/cross connections between domains; road networks and traffics flows can also be considered as graphs with additional attributes \cite{wuComprehensiveSurveyGraph2021}. Graphs are common since they model relationships, which are abstract and ubiquitous in nature. However, graphs are also complex mathematical object: they can be irregular, have arbitrary numbers of nodes and vertices, each node may have any number of neighbors; they are also invariant with respect to rotation and translation, since there are no markers of direction or origin with graphs \cite{bronsteinGeometricDeepLearning2017}. This is in direct contrast to Euclidean data such as images, where the notion of directions and rotations are straightforward to define. The complexity that comes along the expressive power of graphs has imposed significant challenges to existing machine learning methods such as convolution, which are easy to compute in the image domain but difficult in graph domain \cite{wuComprehensiveSurveyGraph2021}. Graph Neural Networks (GNNs) \cite{scarselliGraphNeuralNetwork2009} are the first architecture to directly operate on graphs, bridging the gap between discrete space and Euclidean space, yet permeate the flexibility of composite neural network e.g. stacking and residual connections. GNN and its derivatives had achieved significant success in various supervised and unsupervised learning tasks with graphs \cite{kipfSemiSupervisedClassificationGraph2017, velickovicGraphAttentionNetworks2018}.
+Deep learning has exploded in popularity in recent years due to its
+effectiveness in capturing hidden patterns of Euclidean data such as images,
+audio and natural languages. However, not all data can be represented in
+Euclidean space \cite{bronsteinGeometricDeepLearning2017}.  There is an
+increasing number of application for data that are represented as discrete
+graphs: sets of nodes and edges that can directly model abstract relations
+between objects. For example, molecules are essentially connected atoms, bounded
+to one another by chemical bonds; users-products graphs are bipartite graphs
+that imply preferences of a customer towards specific sets of products; citation
+networks represents citationships between academic papers and inter/cross
+connections between domains; road networks and traffics flows can also be
+considered as graphs with additional attributes
+\cite{wuComprehensiveSurveyGraph2021}. Graphs are common since they model
+relationships, which are abstract and ubiquitous in nature. However, graphs are
+also complex mathematical object: they can be irregular, have arbitrary numbers
+of nodes and vertices, each node may have any number of neighbors; they are also
+invariant with respect to rotation and translation, since there are no markers
+of direction or origin with graphs \cite{bronsteinGeometricDeepLearning2017}.
+This is in direct contrast to Euclidean data such as images, where the notion of
+directions and rotations are straightforward to define. The complexity that
+comes along the expressive power of graphs has imposed significant challenges to
+existing machine learning methods such as convolution, which are easy to compute
+in the image domain but difficult in graph domain
+\cite{wuComprehensiveSurveyGraph2021}. Graph Neural Networks (GNNs)
+\cite{scarselliGraphNeuralNetwork2009} are the first architecture to directly
+operate on graphs, bridging the gap between discrete space and Euclidean space,
+yet permeate the flexibility of composite neural network e.g. stacking and
+residual connections. GNN and its derivatives had achieved significant success
+in various supervised and unsupervised learning tasks with graphs
+\cite{kipfSemiSupervisedClassificationGraph2017,
+	velickovicGraphAttentionNetworks2018}.
 
-An interesting subdomain of graph machine learning are generative model for graphs. Generative modeling in particular has been popularized to various modalities since the introduction of Generative Adversarial Network (GANs) \cite{goodfellowGenerativeAdversarialNetworks2014} and Variational Autoencoder (VAEs) \cite{kingmaAutoEncodingVariationalBayes2014}, where both had shown remarkable success in capturing the data distribution of images and even audio \cite{hersheyCNNArchitecturesLargescale2017}. For graphs generation in particular, the majority of research efforts are focused on solving the molecular graph generation problem, which have high practical value in drug discovery \cite{wuComprehensiveSurveyGraph2021}. Specifically, there are two primary way for generating new molecular graphs that are currently explored: sequentially and globally. Sequential approaches generate graphs by proposing nodes and edges step by step, while global approaches output a graph all at once. Pioneers in sequential generation of graphs include graph generation using SMILE representation of graphs \cite{daiSyntaxdirectedVariationalAutoencoder2018, kusnerGrammarVariationalAutoencoder2017, gomez-bombarelliAutomaticChemicalDesign2018}, DeepGMG \cite{liLearningDeepGenerative2018} and GraphRNN \cite{youGraphRNNGeneratingRealistic2018}. For global approaches, existing neural network architecture such as GANs and VAEs are adapted to graph domain by replacing CNN layers with GNN layers, albeit, with certain differences in architectural choices. Notable works in this field include MolGAN \cite{decaoMolGANImplicitGenerative2018}, GraphVAE \cite{simonovskyGraphVAEGenerationSmall2018} and NetGAN \cite{bojchevskiNetGANGeneratingGraphs2018}.
 
-An exciting path of research in generative modeling is to adapt \textit{normalizing flows models} in discrete domain, which has experienced a surge in popularity due to the expressive power of discrete objects such as graphs and sets. Normalizing flows models aim to learn a continuous invertible and deterministic mapping between the data distribution and a latent distribution, which is usually a Gaussian that is easy to manipulate and sample from. Sampling can easily be done by sampling from the latent distribution and run through the reverse mapping to retrieve a sample from the data distribution. The mappings here are simply continuous invertible functions or a composition of them. Designing these functions is the main area of focus when improving the generalization power of these model \cite{kobyzevNormalizingFlowsIntroduction2021}. Notable works in apply normalizing flows to graph are GraphNVP \cite{madhawaGraphNVPInvertibleFlow2019}, GraphAF \cite{shiGraphAFFlowbasedAutoregressive2020} and MoFlow \cite{zangMoFlowInvertibleFlow2020}. A recent development in normalizing flows model are \textit{continuous flows}, where rather than a discrete sequence of functions that are composed together, the invertible mapping is modeled as a solution to a differential equation. Continuous time-dependent mappings allow data distribution to smoothly "flow" toward the latent distribution, albeit, require slightly more computational power to approximate the solution. One of the most notable works in the domain of continuous flow is FFJORD \cite{grathwohlFFJORDFreeformContinuous2018}. Application of continuous flows, however, is a largely unexplored domain.
+An interesting subdomain of graph machine learning are generative model for
+graphs. Generative modeling in particular has been popularized to various
+modalities since the introduction of Generative Adversarial Network (GANs)
+\cite{goodfellowGenerativeAdversarialNetworks2014} and Variational Autoencoder
+(VAEs) \cite{kingmaAutoEncodingVariationalBayes2014}, where both had shown
+remarkable success in capturing the data distribution of images and even audio
+\cite{hersheyCNNArchitecturesLargescale2017}. For graphs generation in
+particular, the majority of research efforts are focused on solving the
+molecular graph generation problem, which have high practical value in drug
+discovery \cite{wuComprehensiveSurveyGraph2021}. Specifically, there are two
+primary way for generating new molecular graphs that are currently explored:
+sequentially and globally. Sequential approaches generate graphs by proposing
+nodes and edges step by step, while global approaches output a graph all at
+once. Pioneers in sequential generation of graphs include graph generation using
+SMILE representation of graphs
+\cite{daiSyntaxdirectedVariationalAutoencoder2018,
+	kusnerGrammarVariationalAutoencoder2017,
+	gomez-bombarelliAutomaticChemicalDesign2018}, DeepGMG
+\colucite{liLearningDeepGenerative2018} and GraphRNN
+\cite{youGraphRNNGeneratingRealistic2018}. For global approaches, existing
+neural network architecture such as GANs and VAEs are adapted to graph domain by
+replacing CNN layers with GNN layers, albeit, with certain differences in
+architectural choices. Notable works in this field include MolGAN
+\cite{decaoMolGANImplicitGenerative2018}, GraphVAE
+\cite{simonovskyGraphVAEGenerationSmall2018} and NetGAN
+\cite{bojchevskiNetGANGeneratingGraphs2018}.
+
+
+An exciting path of research in generative modeling is to adapt
+\textit{normalizing flows models} in discrete domain, which has experienced a
+surge in popularity due to the expressive power of discrete objects such as
+graphs and sets. Normalizing flows models aim to learn a continuous invertible
+and deterministic mapping between the data distribution and a latent
+distribution, which is usually a Gaussian that is easy to manipulate and sample
+from. Sampling can easily be done by sampling from the latent distribution and
+run through the reverse mapping to retrieve a sample from the data distribution.
+The mappings here are simply continuous invertible functions or a composition of
+them. Designing these functions is the main area of focus when improving the
+generalization power of these model
+\cite{kobyzevNormalizingFlowsIntroduction2021}. Notable works in apply
+normalizing flows to graph are GraphNVP
+\cite{madhawaGraphNVPInvertibleFlow2019}, GraphAF
+\cite{shiGraphAFFlowbasedAutoregressive2020} and MoFlow
+\cite{zangMoFlowInvertibleFlow2020}. A recent development in normalizing flows
+model are \textit{continuous flows}, where rather than a discrete sequence of
+functions that are composed together, the invertible mapping is modeled as a
+solution to a differential equation. Continuous time-dependent mappings allow
+data distribution to smoothly "flow" toward the latent distribution, albeit,
+require slightly more computational power to approximate the solution. One of
+the most notable works in the domain of continuous flow is FFJORD
+\cite{grathwohlFFJORDFreeformContinuous2018}. Application of continuous flows,
+however, is a largely unexplored domain.
 
 \section{Thesis outline}
 
-This thesis aim to provide a systematic review of normalizing flows models for graph generation, with a focus on graph neural networks as the primary computational modules. The thesis is structured with concept dependencies in mind, where later topics were written with the assumption that previous concepts had already been read. Therefore, it is recommended that the thesis should be read linearly, however, it is not a mandatory requirement for a pleasant read.
+This thesis aim to provide a systematic review of normalizing flows models for
+graph generation, with a focus on graph neural networks as the primary
+computational modules. The thesis is structured with concept dependencies in
+mind, where later topics were written with the assumption that previous concepts
+had already been read. Therefore, it is recommended that the thesis should be
+read linearly, however, it is not a mandatory requirement for a pleasant read.
 
-The thesis contains seven chapters, starting with Chapter \ref{c:bg}, where a general overview of notations and related works on graph generation was given. Chapter \ref{c:gnn} primary focus on graphs neural networks, explored under a similar categorization framework as introduced by \cite{zhouGraphNeuralNetworks2020}, however are compressed and filtered in term of relevance to normalizing flows. Chapter \ref{c:nf} considers a brief walkthrough of the normalizing flows framework, including motivation, formulation, categorization of different flows and a comparison with others generative modeling architectures such as GANs \cite{goodfellowGenerativeAdversarialNetworks2014} and VAEs \cite{kingmaAutoEncodingVariationalBayes2014}. Chapter \ref{c:gnf} consists of different application of normalizing flows on graphs data, with a particular focus on molecules generation due to its high practical values and conveniently being extensively studied in the literature. As for closing remarks, Chapter \ref{c:dis} give an open discussion on graph generative models along with personal thoughts on future works and research direction. Chapter \ref{c:conclude} provide a final conclusion and closing remarks on the thesis.
+The thesis contains seven chapters, starting with Chapter \ref{c:bg}, where a
+general overview of notations and related works on graph generation was given.
+Chapter \ref{c:gnn} primary focus on graphs neural networks, explored under a
+similar categorization framework as introduced by
+\cite{zhouGraphNeuralNetworks2020}, however are compressed and filtered in terms
+of relevance to normalizing flows. Chapter \ref{c:nf} considers a brief
+walkthrough of the normalizing flows framework, including motivation,
+formulation, categorization of different flows and a comparison with others
+generative modeling architectures such as GANs
+\cite{goodfellowGenerativeAdversarialNetworks2014} and VAEs
+\cite{kingmaAutoEncodingVariationalBayes2014}. Chapter \ref{c:gnf} consists of
+different application of normalizing flows on graphs data, with a particular
+focus on molecule generation due to its high practical values and conveniently
+being extensively studied in the literature. As for closing remarks, Chapter
+\ref{c:dis} give an open discussion on graph generative models along with
+personal thoughts on future works and research direction. Chapter
+\ref{c:conclude} provide a final conclusion and closing remarks on the thesis.
 
 
 \chapter{Background}
@@ -306,9 +407,39 @@ The thesis contains seven chapters, starting with Chapter \ref{c:bg}, where a ge
 \chapter{Graph Neural Network}
 \label{c:gnn}
 
-Graph neural networks (GNNs) in their most general definition can be considered as deep learning based methods that directly operates on graphs. There has been multiple surveys published in effort of standardizing and categorizing graph neural networks: \cite{zhangdeeplearninggraphs2020} \cite{zhangdeeplearninggraphs2020} \cite{chamiMachineLearningGraphs2022} are notable mentions. However, GNN is a field of active research and its taxonomy can change drastically in the future. For convenience and consistency, this thesis adopt the categorization framework by \cite{zhangdeeplearninggraphs2020} where graph neural networks are perceived through the lens of deep learning architectural design. Under this view, graph neural networks pipeline are composed of primarily \textit{computational modules} falling into three main categories: propagation modules, sampling modules and pooling modules. Propagation modules can be considered as the central information aggregators that through the process of propagating information between nodes, are capable of capturing both feature and topological information. There are two main operators used in propagation: convolution operators and recurrent operators, which can be generalized to an encompassing superset of convolutional graph neural network (ConvGNNs) and recurrent graph neural networks (RecGNNs) from the taxonomy proposed by \cite{wuComprehensiveSurveyGraph2021}. The central idea of convolution operators is to generalize convolutions from the other domain to graph domain. Convolutions abstractly can be represented as layers with different parameters or weights that "convolve" with the information passed in as inputs and then output a latent representation. The main distinction between recurrent approaches and convolution approaches is the reusing of weights during information propagation. While convolution use separate weights for each operating layers, recurrent approaches recycle the layer and pass the output as the new input and hence reuse the weights. As the result, the notion of layer depth are mostly applied to convolution methods and not recurrent ones.
+Graph neural networks (GNNs) in their most general definition can be considered
+as deep learning based methods that directly operates on graphs. There have been
+multiple surveys published in effort of standardizing and categorizing graph
+neural networks: \cite{zhangdeeplearninggraphs2020}
+\cite{zhangdeeplearninggraphs2020} \cite{chamiMachineLearningGraphs2022} are
+notable mentions. However, GNN is a field of active research and its taxonomy
+can change drastically in the future. For convenience and consistency, this
+thesis adopts the categorization framework by \cite{zhangdeeplearninggraphs2020}
+where graph neural networks are perceived through the lens of deep learning
+architectural design. Under this view, graph neural networks pipeline are
+composed of primarily \textit{computational modules} falling into three main
+categories: propagation modules, sampling modules and pooling modules.
+Propagation modules can be considered as the central information aggregators
+that through the process of propagating information between nodes, are capable
+of capturing both feature and topological information. There are two main
+operators used in propagation: convolution operators and recurrent operators,
+which can be generalized to an encompassing superset of convolutional graph
+neural network (ConvGNNs) and recurrent graph neural networks (RecGNNs) from the
+taxonomy proposed by \cite{wuComprehensiveSurveyGraph2021}. The central idea of
+convolution operators is to generalize convolutions from the other domain to
+graph domain. Convolutions abstractly can be represented as layers with
+different parameters or weights that "convolve" with the information passed in
+as inputs and then output a latent representation. The main distinction between
+recurrent approaches and convolution approaches is the reusing of weights during
+information propagation. While convolution use separate weights for each
+operating layers, recurrent approaches recycle the layer and pass the output as
+the new input and hence reuse the weights. As the result, the notion of layer
+depth are mostly applied to convolution methods and not recurrent ones.
 
-In an effort of scoping the field of GNN for application in normalizing flows models, only convolutional graph neural networks are explored in detail in this chapter. There are two main methods for convolution operators: spectral methods and spatial methods.
+In an effort of scoping the field of GNN for application in normalizing flows
+models, only convolutional graph neural networks are explored in detail in this
+chapter. There are two main methods for convolution operators: spectral methods
+and spatial methods.
 
 \section{Spectral methods}
 \section{Spatial methods}
@@ -344,7 +475,7 @@ In an effort of scoping the field of GNN for application in normalizing flows mo
 
 \appendix
 
-\bibliography{../../ref.bib}
+\bibliography{ref.bib}
 \bibliographystyle{apalike}
 
 \end{document}
