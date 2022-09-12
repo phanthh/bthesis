@@ -24,7 +24,7 @@
   doi = {10.1109/ACCESS.2021.3071274},
   abstract = {This review provides a comprehensive overview of the state-of-the-art methods of graph-based networks from a deep learning perspective. Graph networks provide a generalized form to exploit non-euclidean space data. A graph can be visualized as an aggregation of nodes and edges without having any order. Data-driven architecture tends to follow a fixed neural network trying to find the pattern in feature space. These strategies have successfully been applied to many applications for euclidean space data. Since graph data in a non-euclidean space does not follow any kind of order, these solutions can be applied to exploit the node relationships. Graph Neural Networks (GNNs) solve this problem by exploiting the relationships among graph data. Recent developments in computational hardware and optimization allow graph networks possible to learn the complex graph relationships. Graph networks are therefore being actively used to solve many problems including protein interface, classification, and learning representations of fingerprints. To encapsulate the importance of graph models, in this paper, we formulate a systematic categorization of GNN models according to their applications from theory to real-life problems and provide a direction of the future scope for the applications of graph models as well as highlight the limitations of existing graph networks.},
   keywords = {Computational modeling,Convolution,Feature extraction,geometric deep learning,Graph neural network,Graph neural networks,graph-structured network,Licenses,non-euclidean space,Task analysis,Taxonomy},
-  file = {/Users/phanthh/Zotero/storage/M697LECL/Asif et al_2021_Graph Neural Network.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/M697LECL/Asif et al_2021_Graph Neural Network.pdf}
 }
 
 @misc{bojchevskiNetGANGeneratingGraphs2018,
@@ -42,7 +42,24 @@
   abstract = {We propose NetGAN - the first implicit generative model for graphs able to mimic real-world networks. We pose the problem of graph generation as learning the distribution of biased random walks over the input graph. The proposed model is based on a stochastic neural network that generates discrete output samples and is trained using the Wasserstein GAN objective. NetGAN is able to produce graphs that exhibit well-known network patterns without explicitly specifying them in the model definition. At the same time, our model exhibits strong generalization properties, as highlighted by its competitive link prediction performance, despite not being trained specifically for this task. Being the first approach to combine both of these desirable properties, NetGAN opens exciting avenues for further research.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Social and Information Networks,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/STTHMN9F/Bojchevski et al_2018_NetGAN.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/STTHMN9F/Bojchevski et al_2018_NetGAN.pdf}
+}
+
+@misc{bressonTwoStepGraphConvolutional2019,
+  title = {A {{Two-Step Graph Convolutional Decoder}} for {{Molecule Generation}}},
+  author = {Bresson, Xavier and Laurent, Thomas},
+  year = {2019},
+  month = jun,
+  number = {arXiv:1906.03412},
+  eprint = {1906.03412},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1906.03412},
+  abstract = {We propose a simple auto-encoder framework for molecule generation. The molecular graph is first encoded into a continuous latent representation \$z\$, which is then decoded back to a molecule. The encoding process is easy, but the decoding process remains challenging. In this work, we introduce a simple two-step decoding process. In a first step, a fully connected neural network uses the latent vector \$z\$ to produce a molecular formula, for example CO\$\_2\$ (one carbon and two oxygen atoms). In a second step, a graph convolutional neural network uses the same latent vector \$z\$ to place bonds between the atoms that were produced in the first step (for example a double bond will be placed between the carbon and each of the oxygens). This two-step process, in which a bag of atoms is first generated, and then assembled, provides a simple framework that allows us to develop an efficient molecule auto-encoder. Numerical experiments on basic tasks such as novelty, uniqueness, validity and optimized chemical property for the 250k ZINC molecules demonstrate the performances of the proposed system. Particularly, we achieve the highest reconstruction rate of 90.5\textbackslash\%, improving the previous rate of 76.7\textbackslash\%. We also report the best property improvement results when optimization is constrained by the molecular distance between the original and generated molecules.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/phanthh/Academia/zotero/storage/AESX673K/Bresson_Laurent_2019_A Two-Step Graph Convolutional Decoder for Molecule Generation.pdf;/Users/phanthh/Academia/zotero/storage/ZYZBEI77/1906.html}
 }
 
 @article{bronsteinGeometricDeepLearning2017,
@@ -59,7 +76,7 @@
   doi = {10.1109/MSP.2017.2693418},
   abstract = {Geometric deep learning is an umbrella term for emerging techniques attempting to generalize (structured) deep neural models to non-Euclidean domains, such as graphs and manifolds. The purpose of this article is to overview different examples of geometric deep-learning problems and present available solutions, key difficulties, applications, and future research directions in this nascent field.},
   keywords = {Computational modeling,Computer architecture,Convolution,Convolutional codes,Euclidean distance,Machine learning,Social network services},
-  file = {/Users/phanthh/Zotero/storage/B2DG57PY/Bronstein et al. - 2017 - Geometric Deep Learning Going beyond Euclidean da.pdf;/Users/phanthh/Zotero/storage/DRWDSPM3/Bronstein et al_2017_Geometric Deep Learning.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/B2DG57PY/Bronstein et al. - 2017 - Geometric Deep Learning Going beyond Euclidean da.pdf;/Users/phanthh/Academia/zotero/storage/DRWDSPM3/Bronstein et al_2017_Geometric Deep Learning.pdf}
 }
 
 @misc{bronsteinGeometricDeepLearning2021,
@@ -77,7 +94,24 @@
   abstract = {The last decade has witnessed an experimental revolution in data science and machine learning, epitomised by deep learning methods. Indeed, many high-dimensional learning tasks previously thought to be beyond reach -- such as computer vision, playing Go, or protein folding -- are in fact feasible with appropriate computational scale. Remarkably, the essence of deep learning is built from two simple algorithmic principles: first, the notion of representation or feature learning, whereby adapted, often hierarchical, features capture the appropriate notion of regularity for each task, and second, learning by local gradient-descent type methods, typically implemented as backpropagation. While learning generic functions in high dimensions is a cursed estimation problem, most tasks of interest are not generic, and come with essential pre-defined regularities arising from the underlying low-dimensionality and structure of the physical world. This text is concerned with exposing these regularities through unified geometric principles that can be applied throughout a wide spectrum of applications. Such a 'geometric unification' endeavour, in the spirit of Felix Klein's Erlangen Program, serves a dual purpose: on one hand, it provides a common mathematical framework to study the most successful neural network architectures, such as CNNs, RNNs, GNNs, and Transformers. On the other hand, it gives a constructive procedure to incorporate prior physical knowledge into neural architectures and provide principled way to build future architectures yet to be invented.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computational Geometry,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/MRWCEFZG/Bronstein et al_2021_Geometric Deep Learning.pdf;/Users/phanthh/Zotero/storage/D2GH32XM/2104.html}
+  file = {/Users/phanthh/Academia/zotero/storage/MRWCEFZG/Bronstein et al_2021_Geometric Deep Learning.pdf;/Users/phanthh/Academia/zotero/storage/D2GH32XM/2104.html}
+}
+
+@misc{brunaSpectralNetworksLocally2014,
+  title = {Spectral {{Networks}} and {{Locally Connected Networks}} on {{Graphs}}},
+  author = {Bruna, Joan and Zaremba, Wojciech and Szlam, Arthur and LeCun, Yann},
+  year = {2014},
+  month = may,
+  number = {arXiv:1312.6203},
+  eprint = {1312.6203},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1312.6203},
+  abstract = {Convolutional Neural Networks are extremely efficient architectures in image and audio recognition tasks, thanks to their ability to exploit the local translational invariance of signal classes over their domain. In this paper we consider possible generalizations of CNNs to signals defined on more general domains without the action of a translation group. In particular, we propose two constructions, one based upon a hierarchical clustering of the domain, and another based on the spectrum of the graph Laplacian. We show through experiments that for low-dimensional graphs it is possible to learn convolutional layers with a number of parameters independent of the input size, resulting in efficient deep architectures.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
+  file = {/Users/phanthh/Academia/zotero/storage/698AT79A/Bruna et al. - 2014 - Spectral Networks and Locally Connected Networks o.pdf;/Users/phanthh/Academia/zotero/storage/RCWEQRYE/1312.html}
 }
 
 @misc{chamiMachineLearningGraphs2022,
@@ -95,7 +129,21 @@
   abstract = {There has been a surge of recent interest in learning representations for graph-structured data. Graph representation learning methods have generally fallen into three main categories, based on the availability of labeled data. The first, network embedding (such as shallow graph embedding or graph auto-encoders), focuses on learning unsupervised representations of relational structure. The second, graph regularized neural networks, leverages graphs to augment neural network losses with a regularization objective for semi-supervised learning. The third, graph neural networks, aims to learn differentiable functions over discrete topologies with arbitrary structure. However, despite the popularity of these areas there has been surprisingly little work on unifying the three paradigms. Here, we aim to bridge the gap between graph neural networks, network embedding and graph regularization models. We propose a comprehensive taxonomy of representation learning methods for graph-structured data, aiming to unify several disparate bodies of work. Specifically, we propose a Graph Encoder Decoder Model (GRAPHEDM), which generalizes popular algorithms for semi-supervised learning on graphs (e.g. GraphSage, Graph Convolutional Networks, Graph Attention Networks), and unsupervised learning of graph representations (e.g. DeepWalk, node2vec, etc) into a single consistent approach. To illustrate the generality of this approach, we fit over thirty existing methods into this framework. We believe that this unifying view both provides a solid foundation for understanding the intuition behind these methods, and enables future research in the area.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Computer Science - Social and Information Networks,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/4BVIE5WX/Chami et al_2022_Machine Learning on Graphs.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/4BVIE5WX/Chami et al_2022_Machine Learning on Graphs.pdf}
+}
+
+@inproceedings{chenContinuousTimeFlowsEfficient2018,
+  title = {Continuous-{{Time Flows}} for {{Efficient Inference}} and {{Density Estimation}}},
+  booktitle = {Proceedings of the 35th {{International Conference}} on {{Machine Learning}}},
+  author = {Chen, Changyou and Li, Chunyuan and Chen, Liqun and Wang, Wenlin and Pu, Yunchen and Duke, Lawrence Carin},
+  year = {2018},
+  month = jul,
+  pages = {824--833},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  abstract = {Two fundamental problems in unsupervised learning are efficient inference for latent-variable models and robust density estimation based on large amounts of unlabeled data. Algorithms for the two tasks, such as normalizing flows and generative adversarial networks (GANs), are often developed independently. In this paper, we propose the concept of continuous-time flows (CTFs), a family of diffusion-based methods that are able to asymptotically approach a target distribution. Distinct from normalizing flows and GANs, CTFs can be adopted to achieve the above two goals in one framework, with theoretical guarantees. Our framework includes distilling knowledge from a CTF for efficient inference, and learning an explicit energy-based distribution with CTFs for density estimation. Both tasks rely on a new technique for distribution matching within amortized learning. Experiments on various tasks demonstrate promising performance of the proposed CTF framework, compared to related techniques.},
+  langid = {english},
+  file = {/Users/phanthh/Academia/zotero/storage/8S5XRYJP/Chen et al. - 2018 - Continuous-Time Flows for Efficient Inference and .pdf;/Users/phanthh/Academia/zotero/storage/G753SQTU/Chen et al. - 2018 - Continuous-Time Flows for Efficient Inference and .pdf}
 }
 
 @article{chengMolecularDesignDrug2021,
@@ -111,7 +159,7 @@
   issn = {1477-4054},
   doi = {10.1093/bib/bbab344},
   abstract = {Deep generative models have been an upsurge in the deep learning community since they were proposed. These models are designed for generating new synthetic data including images, videos and texts by fitting the data approximate distributions. In the last few years, deep generative models have shown superior performance in drug discovery especially de novo molecular design. In this study, deep generative models are reviewed to witness the recent advances of de novo molecular design for drug discovery. In addition, we divide those models into two categories based on molecular representations in silico. Then these two classical types of models are reported in detail and discussed about both pros and cons. We also indicate the current challenges in deep generative models for de novo molecular design. De novo molecular design automatically is promising but a long road to be explored.},
-  file = {/Users/phanthh/Zotero/storage/LGLDFPJ6/6355420.html}
+  file = {/Users/phanthh/Academia/zotero/storage/LGLDFPJ6/6355420.html}
 }
 
 @misc{chenNeuralOrdinaryDifferential2019,
@@ -127,7 +175,7 @@
   abstract = {We introduce a new family of deep neural network models. Instead of specifying a discrete sequence of hidden layers, we parameterize the derivative of the hidden state using a neural network. The output of the network is computed using a black-box differential equation solver. These continuous-depth models have constant memory cost, adapt their evaluation strategy to each input, and can explicitly trade numerical precision for speed. We demonstrate these properties in continuous-depth residual networks and continuous-time latent variable models. We also construct continuous normalizing flows, a generative model that can train by maximum likelihood, without partitioning or ordering the data dimensions. For training, we show how to scalably backpropagate through any ODE solver, without access to its internal operations. This allows end-to-end training of ODEs within larger models.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/8JHSBS2P/Chen et al_2019_Neural Ordinary Differential Equations.pdf;/Users/phanthh/Zotero/storage/6UCCGARK/1806.html}
+  file = {/Users/phanthh/Academia/zotero/storage/8JHSBS2P/Chen et al_2019_Neural Ordinary Differential Equations.pdf;/Users/phanthh/Academia/zotero/storage/6UCCGARK/1806.html}
 }
 
 @misc{choromanskiRethinkingAttentionPerformers2021,
@@ -144,15 +192,41 @@
   abstract = {We introduce Performers, Transformer architectures which can estimate regular (softmax) full-rank-attention Transformers with provable accuracy, but using only linear (as opposed to quadratic) space and time complexity, without relying on any priors such as sparsity or low-rankness. To approximate softmax attention-kernels, Performers use a novel Fast Attention Via positive Orthogonal Random features approach (FAVOR+), which may be of independent interest for scalable kernel methods. FAVOR+ can be also used to efficiently model kernelizable attention mechanisms beyond softmax. This representational power is crucial to accurately compare softmax with other kernels for the first time on large-scale tasks, beyond the reach of regular Transformers, and investigate optimal attention-kernels. Performers are linear architectures fully compatible with regular Transformers and with strong theoretical guarantees: unbiased or nearly-unbiased estimation of the attention matrix, uniform convergence and low estimation variance. We tested Performers on a rich set of tasks stretching from pixel-prediction through text models to protein sequence modeling. We demonstrate competitive results with other examined efficient sparse and dense attention methods, showcasing effectiveness of the novel attention-learning paradigm leveraged by Performers.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/M23FCSF9/Choromanski et al_2021_Rethinking Attention with Performers.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/M23FCSF9/Choromanski et al_2021_Rethinking Attention with Performers.pdf}
 }
 
-@inproceedings{daiSyntaxdirectedVariationalAutoencoder2018,
-  title = {Syntax-Directed Variational Autoencoder for Molecule Generation},
-  booktitle = {Proceedings of the International Conference on Learning Representations},
+@misc{chungEmpiricalEvaluationGated2014,
+  title = {Empirical {{Evaluation}} of {{Gated Recurrent Neural Networks}} on {{Sequence Modeling}}},
+  author = {Chung, Junyoung and Gulcehre, Caglar and Cho, KyungHyun and Bengio, Yoshua},
+  year = {2014},
+  month = dec,
+  number = {arXiv:1412.3555},
+  eprint = {1412.3555},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1412.3555},
+  abstract = {In this paper we compare different types of recurrent units in recurrent neural networks (RNNs). Especially, we focus on more sophisticated units that implement a gating mechanism, such as a long short-term memory (LSTM) unit and a recently proposed gated recurrent unit (GRU). We evaluate these recurrent units on the tasks of polyphonic music modeling and speech signal modeling. Our experiments revealed that these advanced recurrent units are indeed better than more traditional recurrent units such as tanh units. Also, we found GRU to be comparable to LSTM.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
+  file = {/Users/phanthh/Academia/zotero/storage/K9KTDQTU/Chung et al. - 2014 - Empirical Evaluation of Gated Recurrent Neural Net.pdf;/Users/phanthh/Academia/zotero/storage/9RUTWMH6/1412.html}
+}
+
+@misc{daiSyntaxDirectedVariationalAutoencoder2018,
+  title = {Syntax-{{Directed Variational Autoencoder}} for {{Structured Data}}},
   author = {Dai, Hanjun and Tian, Yingtao and Dai, Bo and Skiena, Steven and Song, Le},
   year = {2018},
-  file = {/Users/phanthh/Zotero/storage/4NF7LKFK/Dai et al_2018_Syntax-directed variational autoencoder for molecule generation.pdf}
+  month = feb,
+  number = {arXiv:1802.08786},
+  eprint = {1802.08786},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1802.08786},
+  abstract = {Deep generative models have been enjoying success in modeling continuous data. However it remains challenging to capture the representations for discrete structures with formal grammars and semantics, e.g., computer programs and molecular structures. How to generate both syntactically and semantically correct data still remains largely an open problem. Inspired by the theory of compiler where the syntax and semantics check is done via syntax-directed translation (SDT), we propose a novel syntax-directed variational autoencoder (SD-VAE) by introducing stochastic lazy attributes. This approach converts the offline SDT check into on-the-fly generated guidance for constraining the decoder. Comparing to the state-of-the-art methods, our approach enforces constraints on the output space so that the output will be not only syntactically valid, but also semantically reasonable. We evaluate the proposed model with applications in programming language and molecules, including reconstruction and program/molecule optimization. The results demonstrate the effectiveness in incorporating syntactic and semantic constraints in discrete generative models, which is significantly better than current state-of-the-art approaches.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {/Users/phanthh/Academia/zotero/storage/6DXYK3IS/Dai et al_2018_Syntax-Directed Variational Autoencoder for Structured Data.pdf;/Users/phanthh/Academia/zotero/storage/XFDGB4LC/1802.html}
 }
 
 @misc{decaoMolGANImplicitGenerative2018,
@@ -170,7 +244,35 @@
   abstract = {Deep generative models for graph-structured data offer a new angle on the problem of chemical synthesis: by optimizing differentiable models that directly generate molecular graphs, it is possible to side-step expensive search procedures in the discrete and vast space of chemical structures. We introduce MolGAN, an implicit, likelihood-free generative model for small molecular graphs that circumvents the need for expensive graph matching procedures or node ordering heuristics of previous likelihood-based methods. Our method adapts generative adversarial networks (GANs) to operate directly on graph-structured data. We combine our approach with a reinforcement learning objective to encourage the generation of molecules with specific desired chemical properties. In experiments on the QM9 chemical database, we demonstrate that our model is capable of generating close to 100\% valid compounds. MolGAN compares favorably both to recent proposals that use string-based (SMILES) representations of molecules and to a likelihood-based method that directly generates graphs, albeit being susceptible to mode collapse.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/G2YUUE2E/De Cao_Kipf_2018_MolGAN.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/G2YUUE2E/De Cao_Kipf_2018_MolGAN.pdf}
+}
+
+@inproceedings{defferrardConvolutionalNeuralNetworks2016,
+  title = {Convolutional {{Neural Networks}} on {{Graphs}} with {{Fast Localized Spectral Filtering}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Defferrard, Micha{\"e}l and Bresson, Xavier and Vandergheynst, Pierre},
+  year = {2016},
+  volume = {29},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {In this work, we are interested in generalizing convolutional neural networks (CNNs) from low-dimensional regular grids, where image, video and speech are represented, to high-dimensional irregular domains, such as social networks, brain connectomes or words' embedding, represented by graphs. We present a formulation of CNNs in the context of spectral graph theory, which provides the necessary mathematical background and efficient numerical schemes to design fast localized convolutional filters on graphs. Importantly, the proposed technique offers the same linear computational complexity and constant learning complexity as classical CNNs, while being universal to any graph structure. Experiments on MNIST and 20NEWS demonstrate the ability of this novel deep learning system to learn local, stationary, and compositional features on graphs.},
+  file = {/Users/phanthh/Academia/zotero/storage/9BB6HVXA/Defferrard et al. - 2016 - Convolutional Neural Networks on Graphs with Fast .pdf}
+}
+
+@misc{dengContinuousGraphFlow2019,
+  title = {Continuous {{Graph Flow}}},
+  author = {Deng, Zhiwei and Nawhal, Megha and Meng, Lili and Mori, Greg},
+  year = {2019},
+  month = sep,
+  number = {arXiv:1908.02436},
+  eprint = {1908.02436},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1908.02436},
+  abstract = {In this paper, we propose Continuous Graph Flow, a generative continuous flow based method that aims to model complex distributions of graph-structured data. Once learned, the model can be applied to an arbitrary graph, defining a probability density over the random variables represented by the graph. It is formulated as an ordinary differential equation system with shared and reusable functions that operate over the graphs. This leads to a new type of neural graph message passing scheme that performs continuous message passing over time. This class of models offers several advantages: a flexible representation that can generalize to variable data dimensions; ability to model dependencies in complex data distributions; reversible and memory-efficient; and exact and efficient computation of the likelihood of the data. We demonstrate the effectiveness of our model on a diverse set of generation tasks across different domains: graph generation, image puzzle generation, and layout generation from scene graphs. Our proposed model achieves significantly better performance compared to state-of-the-art models.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/phanthh/Academia/zotero/storage/84IMUARR/Deng et al. - 2019 - Continuous Graph Flow.pdf;/Users/phanthh/Academia/zotero/storage/U3BHQ8A5/1908.html}
 }
 
 @misc{dinhDensityEstimationUsing2017,
@@ -187,7 +289,7 @@
   abstract = {Unsupervised learning of probabilistic models is a central yet challenging problem in machine learning. Specifically, designing models with tractable learning, sampling, inference and evaluation is crucial in solving this task. We extend the space of such models using real-valued non-volume preserving (real NVP) transformations, a set of powerful invertible and learnable transformations, resulting in an unsupervised learning algorithm with exact log-likelihood computation, exact sampling, exact inference of latent variables, and an interpretable latent space. We demonstrate its ability to model natural images on four datasets through sampling, log-likelihood evaluation and latent variable manipulations.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/SP2SP2YF/Dinh et al_2017_Density estimation using Real NVP.pdf;/Users/phanthh/Zotero/storage/ZM662CXM/1605.html}
+  file = {/Users/phanthh/Academia/zotero/storage/SP2SP2YF/Dinh et al_2017_Density estimation using Real NVP.pdf;/Users/phanthh/Academia/zotero/storage/ZM662CXM/1605.html}
 }
 
 @misc{dinhNICENonlinearIndependent2015,
@@ -205,7 +307,7 @@
   abstract = {We propose a deep learning framework for modeling complex high-dimensional densities called Non-linear Independent Component Estimation (NICE). It is based on the idea that a good representation is one in which the data has a distribution that is easy to model. For this purpose, a non-linear deterministic transformation of the data is learned that maps it to a latent space so as to make the transformed data conform to a factorized distribution, i.e., resulting in independent latent variables. We parametrize this transformation so that computing the Jacobian determinant and inverse transform is trivial, yet we maintain the ability to learn complex non-linear transformations, via a composition of simple building blocks, each based on a deep neural network. The training criterion is simply the exact log-likelihood, which is tractable. Unbiased ancestral sampling is also easy. We show that this approach yields good generative models on four image datasets and can be used for inpainting.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/2EM7AA27/Dinh et al_2015_NICE.pdf;/Users/phanthh/Zotero/storage/5YZ5GZMR/1410.html}
+  file = {/Users/phanthh/Academia/zotero/storage/2EM7AA27/Dinh et al_2015_NICE.pdf;/Users/phanthh/Academia/zotero/storage/5YZ5GZMR/1410.html}
 }
 
 @misc{duMolGenSurveySystematicSurvey2022,
@@ -223,7 +325,7 @@
   abstract = {Molecule design is a fundamental problem in molecular science and has critical applications in a variety of areas, such as drug discovery, material science, etc. However, due to the large searching space, it is impossible for human experts to enumerate and test all molecules in wet-lab experiments. Recently, with the rapid development of machine learning methods, especially generative methods, molecule design has achieved great progress by leveraging machine learning models to generate candidate molecules. In this paper, we systematically review the most relevant work in machine learning models for molecule design. We start with a brief review of the mainstream molecule featurization and representation methods (including 1D string, 2D graph, and 3D geometry) and general generative methods (deep generative and combinatorial optimization methods). Then we summarize all the existing molecule design problems into several venues according to the problem setup, including input, output types and goals. Finally, we conclude with the open challenges and point out future opportunities of machine learning models for molecule design in real-world applications.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computational Engineering; Finance; and Science,Computer Science - Machine Learning,Quantitative Biology - Biomolecules},
-  file = {/Users/phanthh/Zotero/storage/EMZGBMQX/Du et al_2022_MolGenSurvey.pdf;/Users/phanthh/Zotero/storage/AZ35ZPRB/2203.html}
+  file = {/Users/phanthh/Academia/zotero/storage/EMZGBMQX/Du et al_2022_MolGenSurvey.pdf;/Users/phanthh/Academia/zotero/storage/AZ35ZPRB/2203.html}
 }
 
 @misc{dupontAugmentedNeuralODEs2019,
@@ -240,7 +342,7 @@
   abstract = {We show that Neural Ordinary Differential Equations (ODEs) learn representations that preserve the topology of the input space and prove that this implies the existence of functions Neural ODEs cannot represent. To address these limitations, we introduce Augmented Neural ODEs which, in addition to being more expressive models, are empirically more stable, generalize better and have a lower computational cost than Neural ODEs.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/W2QVA8P2/Dupont et al_2019_Augmented Neural ODEs.pdf;/Users/phanthh/Zotero/storage/A3SR9PS5/1904.html}
+  file = {/Users/phanthh/Academia/zotero/storage/W2QVA8P2/Dupont et al_2019_Augmented Neural ODEs.pdf;/Users/phanthh/Academia/zotero/storage/A3SR9PS5/1904.html}
 }
 
 @misc{durkanCubicSplineFlows2019,
@@ -257,7 +359,18 @@
   abstract = {A normalizing flow models a complex probability density as an invertible transformation of a simple density. The invertibility means that we can evaluate densities and generate samples from a flow. In practice, autoregressive flow-based models are slow to invert, making either density estimation or sample generation slow. Flows based on coupling transforms are fast for both tasks, but have previously performed less well at density estimation than autoregressive flows. We stack a new coupling transform, based on monotonic cubic splines, with LU-decomposed linear layers. The resulting cubic-spline flow retains an exact one-pass inverse, can be used to generate high-quality images, and closes the gap with autoregressive flows on a suite of density-estimation tasks.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/I53GLGBJ/Durkan et al_2019_Cubic-Spline Flows.pdf;/Users/phanthh/Zotero/storage/CC2X5EYZ/1906.html}
+  file = {/Users/phanthh/Academia/zotero/storage/I53GLGBJ/Durkan et al_2019_Cubic-Spline Flows.pdf;/Users/phanthh/Academia/zotero/storage/CC2X5EYZ/1906.html}
+}
+
+@inproceedings{duvenaudConvolutionalNetworksGraphs2015,
+  title = {Convolutional {{Networks}} on {{Graphs}} for {{Learning Molecular Fingerprints}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Duvenaud, David K and Maclaurin, Dougal and Iparraguirre, Jorge and Bombarell, Rafael and Hirzel, Timothy and {Aspuru-Guzik}, Alan and Adams, Ryan P},
+  year = {2015},
+  volume = {28},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {We introduce a convolutional neural network that operates directly on graphs.These networks allow end-to-end learning of prediction pipelines whose inputs are graphs of arbitrary size and shape.The architecture we present generalizes standard molecular feature extraction methods based on circular fingerprints.We show that these data-driven features are more interpretable, and have better predictive performance on a variety of tasks.},
+  file = {/Users/phanthh/Academia/zotero/storage/BEYA8JMR/Duvenaud et al. - 2015 - Convolutional Networks on Graphs for Learning Mole.pdf}
 }
 
 @misc{finlayHowTrainYour2020,
@@ -275,7 +388,22 @@
   abstract = {Training neural ODEs on large datasets has not been tractable due to the necessity of allowing the adaptive numerical ODE solver to refine its step size to very small values. In practice this leads to dynamics equivalent to many hundreds or even thousands of layers. In this paper, we overcome this apparent difficulty by introducing a theoretically-grounded combination of both optimal transport and stability regularizations which encourage neural ODEs to prefer simpler dynamics out of all the dynamics that solve a problem well. Simpler dynamics lead to faster convergence and to fewer discretizations of the solver, considerably decreasing wall-clock time without loss in performance. Our approach allows us to train neural ODE-based generative models to the same performance as the unregularized dynamics, with significant reductions in training time. This brings neural ODEs closer to practical relevance in large-scale applications.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/XR3VL7BE/Finlay et al_2020_How to train your neural ODE.pdf;/Users/phanthh/Zotero/storage/B6KNJGAT/2002.html}
+  file = {/Users/phanthh/Academia/zotero/storage/XR3VL7BE/Finlay et al_2020_How to train your neural ODE.pdf;/Users/phanthh/Academia/zotero/storage/B6KNJGAT/2002.html}
+}
+
+@inproceedings{germainMADEMaskedAutoencoder2015,
+  title = {{{MADE}}: {{Masked Autoencoder}} for {{Distribution Estimation}}},
+  shorttitle = {{{MADE}}},
+  booktitle = {Proceedings of the 32nd {{International Conference}} on {{Machine Learning}}},
+  author = {Germain, Mathieu and Gregor, Karol and Murray, Iain and Larochelle, Hugo},
+  year = {2015},
+  month = jun,
+  pages = {881--889},
+  publisher = {{PMLR}},
+  issn = {1938-7228},
+  abstract = {There has been a lot of recent interest in designing neural network models to estimate a distribution from a set of examples. We introduce a simple modification for autoencoder neural networks that yields powerful generative models. Our method masks the autoencoder's parameters to respect autoregressive constraints: each input is reconstructed only from previous inputs in a given ordering. Constrained this way, the autoencoder outputs can be interpreted as a set of conditional probabilities, and their product, the full joint probability. We can also train a single network that can decompose the joint probability in multiple different orderings. Our simple framework can be applied to multiple architectures, including deep ones. Vectorized implementations, such as on GPUs, are simple and fast. Experiments demonstrate that this approach is competitive with state-of-the-art tractable distribution estimators. At test time, the method is significantly faster and scales better than other autoregressive estimators.},
+  langid = {english},
+  file = {/Users/phanthh/Academia/zotero/storage/2E4PTY8N/Germain et al. - 2015 - MADE Masked Autoencoder for Distribution Estimati.pdf}
 }
 
 @inproceedings{gilmerNeuralMessagePassing2017,
@@ -289,7 +417,7 @@
   issn = {2640-3498},
   abstract = {Supervised learning on molecules has incredible potential to be useful in chemistry, drug discovery, and materials science. Luckily, several promising and closely related neural network models invariant to molecular symmetries have already been described in the literature. These models learn a message passing algorithm and aggregation procedure to compute a function of their entire input graph. At this point, the next step is to find a particularly effective variant of this general approach and apply it to chemical prediction benchmarks until we either solve them or reach the limits of the approach. In this paper, we reformulate existing models into a single common framework we call Message Passing Neural Networks (MPNNs) and explore additional novel variations within this framework. Using MPNNs we demonstrate state of the art results on an important molecular property prediction benchmark; these results are strong enough that we believe future work should focus on datasets with larger molecules or more accurate ground truth labels.},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/L4UQ4H7V/Gilmer et al_2017_Neural Message Passing for Quantum Chemistry.pdf;/Users/phanthh/Zotero/storage/YGUJTGDF/Gilmer et al. - 2017 - Neural Message Passing for Quantum Chemistry.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/L4UQ4H7V/Gilmer et al_2017_Neural Message Passing for Quantum Chemistry.pdf;/Users/phanthh/Academia/zotero/storage/YGUJTGDF/Gilmer et al. - 2017 - Neural Message Passing for Quantum Chemistry.pdf}
 }
 
 @article{gomez-bombarelliAutomaticChemicalDesign2018,
@@ -305,7 +433,7 @@
   issn = {2374-7943},
   doi = {10.1021/acscentsci.7b00572},
   abstract = {We report a method to convert discrete representations of molecules to and from a multidimensional continuous representation. This model allows us to generate new molecules for efficient exploration and optimization through open-ended spaces of chemical compounds. A deep neural network was trained on hundreds of thousands of existing chemical structures to construct three coupled functions: an encoder, a decoder, and a predictor. The encoder converts the discrete representation of a molecule into a real-valued continuous vector, and the decoder converts these continuous vectors back to discrete molecular representations. The predictor estimates chemical properties from the latent continuous vector representation of the molecule. Continuous representations of molecules allow us to automatically generate novel chemical structures by performing simple operations in the latent space, such as decoding random vectors, perturbing known chemical structures, or interpolating between molecules. Continuous representations also allow the use of powerful gradient-based optimization to efficiently guide the search for optimized functional compounds. We demonstrate our method in the domain of drug-like molecules and also in a set of molecules with fewer that nine heavy atoms.},
-  file = {/Users/phanthh/Zotero/storage/GD8YKB2L/Gómez-Bombarelli et al_2018_Automatic Chemical Design Using a Data-Driven Continuous Representation of.pdf;/Users/phanthh/Zotero/storage/GZJ6KSGB/Gómez-Bombarelli et al. - 2018 - Automatic Chemical Design Using a Data-Driven Cont.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/GD8YKB2L/Gómez-Bombarelli et al_2018_Automatic Chemical Design Using a Data-Driven Continuous Representation of.pdf;/Users/phanthh/Academia/zotero/storage/GZJ6KSGB/Gómez-Bombarelli et al. - 2018 - Automatic Chemical Design Using a Data-Driven Cont.pdf}
 }
 
 @misc{goodfellowGenerativeAdversarialNetworks2014,
@@ -322,7 +450,7 @@
   abstract = {We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G. The training procedure for G is to maximize the probability of D making a mistake. This framework corresponds to a minimax two-player game. In the space of arbitrary functions G and D, a unique solution exists, with G recovering the training data distribution and D equal to 1/2 everywhere. In the case where G and D are defined by multilayer perceptrons, the entire system can be trained with backpropagation. There is no need for any Markov chains or unrolled approximate inference networks during either training or generation of samples. Experiments demonstrate the potential of the framework through qualitative and quantitative evaluation of the generated samples.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/P2MLS8NH/Goodfellow et al_2014_Generative Adversarial Networks.pdf;/Users/phanthh/Zotero/storage/A8Q58MUI/1406.html}
+  file = {/Users/phanthh/Academia/zotero/storage/P2MLS8NH/Goodfellow et al_2014_Generative Adversarial Networks.pdf;/Users/phanthh/Academia/zotero/storage/A8Q58MUI/1406.html}
 }
 
 @misc{grathwohlFFJORDFreeformContinuous2018,
@@ -340,7 +468,7 @@
   abstract = {A promising class of generative models maps points from a simple distribution to a complex distribution through an invertible neural network. Likelihood-based training of these models requires restricting their architectures to allow cheap computation of Jacobian determinants. Alternatively, the Jacobian trace can be used if the transformation is specified by an ordinary differential equation. In this paper, we use Hutchinson's trace estimator to give a scalable unbiased estimate of the log-density. The result is a continuous-time invertible generative model with unbiased density estimation and one-pass sampling, while allowing unrestricted neural network architectures. We demonstrate our approach on high-dimensional density estimation, image generation, and variational inference, achieving the state-of-the-art among exact likelihood methods with efficient sampling.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/TM9KHRUU/Grathwohl et al_2018_FFJORD.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/TM9KHRUU/Grathwohl et al_2018_FFJORD.pdf}
 }
 
 @inproceedings{grcicDenselyConnectedNormalizing2021,
@@ -352,7 +480,7 @@
   pages = {23968--23982},
   publisher = {{Curran Associates, Inc.}},
   abstract = {Normalizing flows are bijective mappings between inputs and latent representations with a fully factorized distribution. They are very attractive due to exact likelihood evaluation and efficient sampling. However, their effective capacity is often insufficient since the bijectivity constraint limits the model width. We address this issue by incrementally padding intermediate representations with noise. We precondition the noise in accordance with previous invertible units, which we describe as cross-unit coupling. Our invertible glow-like modules increase the model expressivity by fusing a densely connected block with Nystr\"om self-attention. We refer to our architecture as DenseFlow since both cross-unit and intra-module couplings rely on dense connectivity. Experiments show significant improvements due to the proposed contributions and reveal state-of-the-art density estimation under moderate computing budgets.},
-  file = {/Users/phanthh/Zotero/storage/3MW4V59I/Grcić et al_2021_Densely connected normalizing flows.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/3MW4V59I/Grcić et al_2021_Densely connected normalizing flows.pdf}
 }
 
 @article{haghighatlariAdvancesMachineLearning2019,
@@ -368,7 +496,18 @@
   doi = {10.1016/j.coche.2019.02.009},
   abstract = {In this review, we highlight recent developments in the application of machine learning for molecular modeling and simulation. After giving a brief overview of the foundations, components, and workflow of a typical supervised learning approach for chemical problems, we showcase areas and state-of-the-art examples of their deployment. In this context, we discuss how machine learning relates to, supports, and augments more traditional physics-based approaches in computational research. We conclude by outlining challenges and future research directions that need to be addressed in order to make machine learning a mainstream chemical engineering tool.},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/NI4PAK6J/Haghighatlari_Hachmann_2019_Advances of machine learning in molecular modeling and simulation.pdf;/Users/phanthh/Zotero/storage/RCINUQ5A/S2211339818300832.html}
+  file = {/Users/phanthh/Academia/zotero/storage/NI4PAK6J/Haghighatlari_Hachmann_2019_Advances of machine learning in molecular modeling and simulation.pdf;/Users/phanthh/Academia/zotero/storage/RCINUQ5A/S2211339818300832.html}
+}
+
+@inproceedings{hamiltonInductiveRepresentationLearning2017,
+  title = {Inductive {{Representation Learning}} on {{Large Graphs}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Hamilton, Will and Ying, Zhitao and Leskovec, Jure},
+  year = {2017},
+  volume = {30},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during training of the embeddings; these previous approaches are inherently transductive and do not naturally generalize to unseen nodes. Here we present GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings.  Instead of training individual embeddings for each node, we learn a function that generates embeddings by sampling and aggregating features from a node's local neighborhood. Our algorithm outperforms strong baselines on three inductive node-classification benchmarks: we classify the category of unseen nodes in evolving information graphs based on citation and Reddit post data, and we show that our algorithm generalizes to completely unseen graphs using a multi-graph dataset of protein-protein interactions.},
+  file = {/Users/phanthh/Academia/zotero/storage/YXYMX5YA/Hamilton et al. - 2017 - Inductive Representation Learning on Large Graphs.pdf}
 }
 
 @inproceedings{heDeepResidualLearning2016,
@@ -377,7 +516,7 @@
   author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
   year = {2016},
   pages = {770--778},
-  file = {/Users/phanthh/Zotero/storage/FC5UNJKS/He et al_2016_Deep Residual Learning for Image Recognition.pdf;/Users/phanthh/Zotero/storage/RF3WJVXK/He_Deep_Residual_Learning_CVPR_2016_paper.html}
+  file = {/Users/phanthh/Academia/zotero/storage/FC5UNJKS/He et al_2016_Deep Residual Learning for Image Recognition.pdf;/Users/phanthh/Academia/zotero/storage/RF3WJVXK/He_Deep_Residual_Learning_CVPR_2016_paper.html}
 }
 
 @inproceedings{hersheyCNNArchitecturesLargescale2017,
@@ -391,7 +530,7 @@
   doi = {10.1109/ICASSP.2017.7952132},
   abstract = {Convolutional Neural Networks (CNNs) have proven very effective in image classification and show promise for audio. We use various CNN architectures to classify the soundtracks of a dataset of 70M training videos (5.24 million hours) with 30,871 video-level labels. We examine fully connected Deep Neural Networks (DNNs), AlexNet [1], VGG [2], Inception [3], and ResNet [4]. We investigate varying the size of both training set and label vocabulary, finding that analogs of the CNNs used in image classification do well on our audio classification task, and larger training and label sets help up to a point. A model using embeddings from these classifiers does much better than raw features on the Audio Set [5] Acoustic Event Detection (AED) classification task.},
   keywords = {Acoustic Event Detection,Acoustic Scene Classification,Computer architecture,Convolutional Neural Networks,Deep Neural Networks,Hidden Markov models,Neural networks,Servers,Spectrogram,Training,Video Classification,Videos},
-  file = {/Users/phanthh/Zotero/storage/53KSDEYW/Hershey et al. - 2017 - CNN architectures for large-scale audio classifica.pdf;/Users/phanthh/Zotero/storage/JRE67HMF/Hershey et al_2017_CNN architectures for large-scale audio classification.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/53KSDEYW/Hershey et al. - 2017 - CNN architectures for large-scale audio classifica.pdf;/Users/phanthh/Academia/zotero/storage/JRE67HMF/Hershey et al_2017_CNN architectures for large-scale audio classification.pdf}
 }
 
 @misc{hoFlowImprovingFlowBased2019,
@@ -409,7 +548,7 @@
   abstract = {Flow-based generative models are powerful exact likelihood models with efficient sampling and inference. Despite their computational efficiency, flow-based models generally have much worse density modeling performance compared to state-of-the-art autoregressive models. In this paper, we investigate and improve upon three limiting design choices employed by flow-based models in prior work: the use of uniform noise for dequantization, the use of inexpressive affine flows, and the use of purely convolutional conditioning networks in coupling layers. Based on our findings, we propose Flow++, a new flow-based model that is now the state-of-the-art non-autoregressive model for unconditional density estimation on standard image benchmarks. Our work has begun to close the significant performance gap that has so far existed between autoregressive models and flow-based models. Our implementation is available at https://github.com/aravindsrinivas/flowpp},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/9V7UTKIC/Ho et al_2019_Flow++.pdf;/Users/phanthh/Zotero/storage/8CYIR34D/1902.html}
+  file = {/Users/phanthh/Academia/zotero/storage/9V7UTKIC/Ho et al_2019_Flow++.pdf;/Users/phanthh/Academia/zotero/storage/8CYIR34D/1902.html}
 }
 
 @misc{hondaGraphResidualFlow2019,
@@ -426,7 +565,7 @@
   abstract = {Statistical generative models for molecular graphs attract attention from many researchers from the fields of bio- and chemo-informatics. Among these models, invertible flow-based approaches are not fully explored yet. In this paper, we propose a powerful invertible flow for molecular graphs, called graph residual flow (GRF). The GRF is based on residual flows, which are known for more flexible and complex non-linear mappings than traditional coupling flows. We theoretically derive non-trivial conditions such that GRF is invertible, and present a way of keeping the entire flows invertible throughout the training and sampling. Experimental results show that a generative model based on the proposed GRF achieves comparable generation performance, with much smaller number of trainable parameters compared to the existing flow-based model.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/PB6D9F4Q/Honda et al_2019_Graph Residual Flow for Molecular Graph Generation.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/PB6D9F4Q/Honda et al_2019_Graph Residual Flow for Molecular Graph Generation.pdf}
 }
 
 @inproceedings{hoogeboomEmergingConvolutionsGenerative2019,
@@ -440,7 +579,7 @@
   issn = {2640-3498},
   abstract = {Generative flows are attractive because they admit exact likelihood optimization and efficient image synthesis. Recently, Kingma \& Dhariwal (2018) demonstrated with Glow that generative flows are capable of generating high quality images. We generalize the 1 \{\textbackslash texttimes\} 1 convolutions proposed in Glow to invertible d \{\textbackslash texttimes\} d convolutions, which are more flexible since they operate on both channel and spatial axes. We propose two methods to produce invertible convolutions, that have receptive fields identical to standard convolutions: Emerging convolutions are obtained by chaining specific autoregressive convolutions, and periodic convolutions are decoupled in the frequency domain. Our experiments show that the flexibility of d \{\textbackslash texttimes\} d convolutions significantly improves the performance of generative flow models on galaxy images, CIFAR10 and ImageNet.},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/H3ZF8EHQ/Hoogeboom et al_2019_Emerging Convolutions for Generative Normalizing Flows.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/H3ZF8EHQ/Hoogeboom et al_2019_Emerging Convolutions for Generative Normalizing Flows.pdf}
 }
 
 @inproceedings{huangNeuralAutoregressiveFlows2018,
@@ -454,7 +593,24 @@
   issn = {2640-3498},
   abstract = {Normalizing flows and autoregressive models have been successfully combined to produce state-of-the-art results in density estimation, via Masked Autoregressive Flows (MAF) (Papamakarios et al., 2017), and to accelerate state-of-the-art WaveNet-based speech synthesis to 20x faster than real-time (Oord et al., 2017), via Inverse Autoregressive Flows (IAF) (Kingma et al., 2016). We unify and generalize these approaches, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. We demonstrate that the proposed neural autoregressive flows (NAF) are universal approximators for continuous probability distributions, and their greater expressivity allows them to better capture multimodal target distributions. Experimentally, NAF yields state-of-the-art performance on a suite of density estimation tasks and outperforms IAF in variational autoencoders trained on binarized MNIST.},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/ACDB69QZ/Huang et al_2018_Neural Autoregressive Flows.pdf;/Users/phanthh/Zotero/storage/V8V57XDW/Huang et al. - 2018 - Neural Autoregressive Flows.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/ACDB69QZ/Huang et al_2018_Neural Autoregressive Flows.pdf;/Users/phanthh/Academia/zotero/storage/V8V57XDW/Huang et al. - 2018 - Neural Autoregressive Flows.pdf}
+}
+
+@article{irwinZINCFreeTool2012,
+  title = {{{ZINC}}: {{A Free Tool}} to {{Discover Chemistry}} for {{Biology}}},
+  shorttitle = {{{ZINC}}},
+  author = {Irwin, John J. and Sterling, Teague and Mysinger, Michael M. and Bolstad, Erin S. and Coleman, Ryan G.},
+  year = {2012},
+  month = jul,
+  journal = {Journal of Chemical Information and Modeling},
+  volume = {52},
+  number = {7},
+  pages = {1757--1768},
+  publisher = {{American Chemical Society}},
+  issn = {1549-9596},
+  doi = {10.1021/ci3001277},
+  abstract = {ZINC is a free public resource for ligand discovery. The database contains over twenty million commercially available molecules in biologically relevant representations that may be downloaded in popular ready-to-dock formats and subsets. The Web site also enables searches by structure, biological activity, physical property, vendor, catalog number, name, and CAS number. Small custom subsets may be created, edited, shared, docked, downloaded, and conveyed to a vendor for purchase. The database is maintained and curated for a high purchasing success rate and is freely available at zinc.docking.org.},
+  file = {/Users/phanthh/Academia/zotero/storage/BZISM9CK/Irwin et al. - 2012 - ZINC A Free Tool to Discover Chemistry for Biolog.pdf;/Users/phanthh/Academia/zotero/storage/2IL5J2SW/ci3001277.html}
 }
 
 @misc{jainiSumofSquaresPolynomialFlow2019,
@@ -471,7 +627,35 @@
   abstract = {Triangular map is a recent construct in probability theory that allows one to transform any source probability density function to any target density function. Based on triangular maps, we propose a general framework for high-dimensional density estimation, by specifying one-dimensional transformations (equivalently conditional densities) and appropriate conditioner networks. This framework (a) reveals the commonalities and differences of existing autoregressive and flow based methods, (b) allows a unified understanding of the limitations and representation power of these recent approaches and, (c) motivates us to uncover a new Sum-of-Squares (SOS) flow that is interpretable, universal, and easy to train. We perform several synthetic experiments on various density geometries to demonstrate the benefits (and short-comings) of such transformations. SOS flows achieve competitive results in simulations and several real-world datasets.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/LDQUC2JE/Jaini et al_2019_Sum-of-Squares Polynomial Flow.pdf;/Users/phanthh/Zotero/storage/Y36JKLNW/1905.html}
+  file = {/Users/phanthh/Academia/zotero/storage/LDQUC2JE/Jaini et al_2019_Sum-of-Squares Polynomial Flow.pdf;/Users/phanthh/Academia/zotero/storage/Y36JKLNW/1905.html}
+}
+
+@inproceedings{jinJunctionTreeVariational2018,
+  title = {Junction {{Tree Variational Autoencoder}} for {{Molecular Graph Generation}}},
+  booktitle = {Proceedings of the 35th {{International Conference}} on {{Machine Learning}}},
+  author = {Jin, Wengong and Barzilay, Regina and Jaakkola, Tommi},
+  year = {2018},
+  month = jul,
+  pages = {2323--2332},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  abstract = {We seek to automate the design of molecules based on specific chemical properties. In computational terms, this task involves continuous embedding and generation of molecular graphs. Our primary contribution is the direct realization of molecular graphs, a task previously approached by generating linear SMILES strings instead of graphs. Our junction tree variational autoencoder generates molecular graphs in two phases, by first generating a tree-structured scaffold over chemical substructures, and then combining them into a molecule with a graph message passing network. This approach allows us to incrementally expand molecules while maintaining chemical validity at every step. We evaluate our model on multiple tasks ranging from molecular generation to optimization. Across these tasks, our model outperforms previous state-of-the-art baselines by a significant margin.},
+  langid = {english},
+  file = {/Users/phanthh/Academia/zotero/storage/5BRFX6NZ/Jin et al. - 2018 - Junction Tree Variational Autoencoder for Molecula.pdf;/Users/phanthh/Academia/zotero/storage/C2KS7URG/Jin et al_2018_Junction Tree Variational Autoencoder for Molecular Graph Generation.pdf}
+}
+
+@inproceedings{jinMultiObjectiveMoleculeGeneration2020,
+  title = {Multi-{{Objective Molecule Generation}} Using {{Interpretable Substructures}}},
+  booktitle = {Proceedings of the 37th {{International Conference}} on {{Machine Learning}}},
+  author = {Jin, Wengong and Barzilay, Dr Regina and Jaakkola, Tommi},
+  year = {2020},
+  month = nov,
+  pages = {4849--4859},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  abstract = {Drug discovery aims to find novel compounds with specified chemical property profiles. In terms of generative modeling, the goal is to learn to sample molecules in the intersection of multiple property constraints. This task becomes increasingly challenging when there are many property constraints. We propose to offset this complexity by composing molecules from a vocabulary of substructures that we call molecular rationales. These rationales are identified from molecules as substructures that are likely responsible for each property of interest. We then learn to expand rationales into a full molecule using graph generative models. Our final generative model composes molecules as mixtures of multiple rationale completions, and this mixture is fine-tuned to preserve the properties of interest. We evaluate our model on various drug design tasks and demonstrate significant improvements over state-of-the-art baselines in terms of accuracy, diversity, and novelty of generated compounds.},
+  langid = {english},
+  file = {/Users/phanthh/Academia/zotero/storage/QPXNE9R6/Jin et al_2020_Multi-Objective Molecule Generation using Interpretable Substructures.pdf}
 }
 
 @book{katokIntroductionModernTheory1997,
@@ -500,7 +684,7 @@
   abstract = {How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/BTR8JZVJ/Kingma_Welling_2014_Auto-Encoding Variational Bayes.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/BTR8JZVJ/Kingma_Welling_2014_Auto-Encoding Variational Bayes.pdf}
 }
 
 @inproceedings{kingmaGlowGenerativeFlow2018,
@@ -512,7 +696,7 @@
   volume = {31},
   publisher = {{Curran Associates, Inc.}},
   abstract = {Flow-based generative models are conceptually attractive due to tractability of the exact log-likelihood, tractability of exact latent-variable inference, and parallelizability of both training and synthesis. In this paper we propose Glow, a simple type of generative flow using invertible 1x1 convolution. Using our method we demonstrate a significant improvement in log-likelihood and qualitative sample quality. Perhaps most strikingly, we demonstrate that a generative model optimized towards the plain log-likelihood objective is capable of efficient synthesis of large and subjectively realistic-looking images.},
-  file = {/Users/phanthh/Zotero/storage/6QVA8KGA/Kingma_Dhariwal_2018_Glow.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/6QVA8KGA/Kingma_Dhariwal_2018_Glow.pdf}
 }
 
 @inproceedings{kingmaImprovedVariationalInference2016,
@@ -523,7 +707,7 @@
   volume = {29},
   publisher = {{Curran Associates, Inc.}},
   abstract = {The framework of normalizing flows provides a general strategy for flexible variational inference of posteriors over latent variables. We propose a new type of normalizing flow, inverse autoregressive flow (IAF), that, in contrast to earlier published flows, scales well to high-dimensional latent spaces. The proposed flow consists of a chain of invertible transformations, where each transformation is based on an autoregressive neural network. In experiments, we show that IAF significantly improves upon diagonal Gaussian approximate posteriors. In addition, we demonstrate that a novel type of variational autoencoder, coupled with IAF, is competitive with neural autoregressive models in terms of attained log-likelihood on natural images, while allowing significantly faster synthesis.},
-  file = {/Users/phanthh/Zotero/storage/3TAYNRVM/Kingma et al_2016_Improved Variational Inference with Inverse Autoregressive Flow.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/3TAYNRVM/Kingma et al_2016_Improved Variational Inference with Inverse Autoregressive Flow.pdf}
 }
 
 @misc{kipfSemiSupervisedClassificationGraph2017,
@@ -540,7 +724,7 @@
   abstract = {We present a scalable approach for semi-supervised learning on graph-structured data that is based on an efficient variant of convolutional neural networks which operate directly on graphs. We motivate the choice of our convolutional architecture via a localized first-order approximation of spectral graph convolutions. Our model scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes. In a number of experiments on citation networks and on a knowledge graph dataset we demonstrate that our approach outperforms related methods by a significant margin.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/5PRSJFQ4/Kipf_Welling_2017_Semi-Supervised Classification with Graph Convolutional Networks.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/5PRSJFQ4/Kipf_Welling_2017_Semi-Supervised Classification with Graph Convolutional Networks.pdf}
 }
 
 @article{kobyzevNormalizingFlowsIntroduction2021,
@@ -561,7 +745,7 @@
   abstract = {Normalizing Flows are generative models which produce tractable distributions where both sampling and density evaluation can be efficient and exact. The goal of this survey article is to give a coherent and comprehensive review of the literature around the construction and use of Normalizing Flows for distribution learning. We aim to provide context and explanation of the models, review current state-of-the-art literature, and identify open questions and promising future directions.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/GDABQCGX/Kobyzev et al_2021_Normalizing Flows.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/GDABQCGX/Kobyzev et al_2021_Normalizing Flows.pdf}
 }
 
 @misc{kruseHINTHierarchicalInvertible2021,
@@ -579,7 +763,7 @@
   abstract = {Many recent invertible neural architectures are based on coupling block designs where variables are divided in two subsets which serve as inputs of an easily invertible (usually affine) triangular transformation. While such a transformation is invertible, its Jacobian is very sparse and thus may lack expressiveness. This work presents a simple remedy by noting that subdivision and (affine) coupling can be repeated recursively within the resulting subsets, leading to an efficiently invertible block with dense, triangular Jacobian. By formulating our recursive coupling scheme via a hierarchical architecture, HINT allows sampling from a joint distribution p(y,x) and the corresponding posterior p(x|y) using a single invertible network. We evaluate our method on some standard data sets and benchmark its full power for density estimation and Bayesian inference on a novel data set of 2D shapes in Fourier parameterization, which enables consistent visualization of samples for different dimensionalities.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/LHEKWX3G/Kruse et al_2021_HINT.pdf;/Users/phanthh/Zotero/storage/L5JA5BY5/1905.html}
+  file = {/Users/phanthh/Academia/zotero/storage/LHEKWX3G/Kruse et al_2021_HINT.pdf;/Users/phanthh/Academia/zotero/storage/L5JA5BY5/1905.html}
 }
 
 @inproceedings{kusnerGrammarVariationalAutoencoder2017,
@@ -593,7 +777,52 @@
   issn = {2640-3498},
   abstract = {Deep generative models have been wildly successful at learning coherent latent representations for continuous data such as natural images, artwork, and audio. However, generative modeling of discrete data such as arithmetic expressions and molecular structures still poses significant challenges. Crucially, state-of-the-art methods often produce outputs that are not valid. We make the key observation that frequently, discrete data can be represented as a parse tree from a context-free grammar. We propose a variational autoencoder which directly encodes from and decodes to these parse trees, ensuring the generated outputs are always syntactically valid. Surprisingly, we show that not only does our model more often generate valid outputs, it also learns a more coherent latent space in which nearby points decode to similar discrete outputs. We demonstrate the effectiveness of our learned models by showing their improved performance in Bayesian optimization for symbolic regression and molecule generation.},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/BP8T6225/Kusner et al. - 2017 - Grammar Variational Autoencoder.pdf;/Users/phanthh/Zotero/storage/CGSYAQXL/Kusner et al_2017_Grammar Variational Autoencoder.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/BP8T6225/Kusner et al. - 2017 - Grammar Variational Autoencoder.pdf;/Users/phanthh/Academia/zotero/storage/CGSYAQXL/Kusner et al_2017_Grammar Variational Autoencoder.pdf}
+}
+
+@article{liAdaptiveGraphConvolutional2018,
+  title = {Adaptive {{Graph Convolutional Neural Networks}}},
+  author = {Li, Ruoyu and Wang, Sheng and Zhu, Feiyun and Huang, Junzhou},
+  year = {2018},
+  month = apr,
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume = {32},
+  number = {1},
+  issn = {2374-3468},
+  doi = {10.1609/aaai.v32i1.11691},
+  abstract = {Graph Convolutional Neural Networks (Graph CNNs) are generalizations of classical CNNs to handle graph data such as molecular data, point could and social networks. Current filters in graph CNNs are built for fixed and shared graph structure. However, for most real data, the graph structures varies in both size and connectivity. The paper proposes a generalized and flexible graph CNN taking data of arbitrary graph structure as input. In that way a task-driven adaptive graph is learned for each graph data while training. To efficiently learn the graph, a distance metric learning is proposed. Extensive experiments on nine graph-structured datasets have demonstrated the superior performance improvement on both convergence speed and predictive accuracy.},
+  copyright = {Copyright (c)},
+  langid = {english},
+  keywords = {metric learning},
+  file = {/Users/phanthh/Academia/zotero/storage/U2AJPA3E/Li et al. - 2018 - Adaptive Graph Convolutional Neural Networks.pdf}
+}
+
+@inproceedings{liaoEfficientGraphGeneration2019,
+  title = {Efficient {{Graph Generation}} with {{Graph Recurrent Attention Networks}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Liao, Renjie and Li, Yujia and Song, Yang and Wang, Shenlong and Hamilton, Will and Duvenaud, David K and Urtasun, Raquel and Zemel, Richard},
+  year = {2019},
+  volume = {32},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {We propose a new family of efficient and expressive deep generative models of graphs, called Graph Recurrent Attention Networks (GRANs). Our model generates graphs one block of nodes and associated edges at a time. The block size and sampling stride allow us to trade off sample quality for efficiency. Compared to previous RNN-based graph generative models, our framework better captures the auto-regressive conditioning between the already-generated and to-be-generated parts of the graph using Graph Neural Networks (GNNs) with attention. This not only reduces the dependency on node ordering but also bypasses the long-term bottleneck caused by the sequential nature of RNNs. Moreover, we parameterize the output distribution per block using a mixture of Bernoulli, which captures the correlations among generated edges within the block.  Finally, we propose to handle node orderings in generation by marginalizing over a family of canonical orderings. On standard benchmarks, we achieve state-of-the-art time efficiency and sample quality compared to previous models. Additionally, we show our model is capable of generating large graphs of up to 5K nodes with good quality. Our code is released at: \textbackslash url\{https://github.com/lrjconan/GRAN\}.},
+  file = {/Users/phanthh/Academia/zotero/storage/XQTENNAG/Liao et al_2019_Efficient Graph Generation with Graph Recurrent Attention Networks.pdf}
+}
+
+@misc{liGatedGraphSequence2017,
+  title = {Gated {{Graph Sequence Neural Networks}}},
+  author = {Li, Yujia and Tarlow, Daniel and Brockschmidt, Marc and Zemel, Richard},
+  year = {2017},
+  month = sep,
+  number = {arXiv:1511.05493},
+  eprint = {1511.05493},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1511.05493},
+  abstract = {Graph-structured data appears frequently in domains including chemistry, natural language semantics, social networks, and knowledge bases. In this work, we study feature learning techniques for graph-structured inputs. Our starting point is previous work on Graph Neural Networks (Scarselli et al., 2009), which we modify to use gated recurrent units and modern optimization techniques and then extend to output sequences. The result is a flexible and broadly useful class of neural network models that has favorable inductive biases relative to purely sequence-based models (e.g., LSTMs) when the problem is graph-structured. We demonstrate the capabilities on some simple AI (bAbI) and graph algorithm learning tasks. We then show it achieves state-of-the-art performance on a problem from program verification, in which subgraphs need to be matched to abstract data structures.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
+  file = {/Users/phanthh/Academia/zotero/storage/8XLTIHIS/Li et al. - 2017 - Gated Graph Sequence Neural Networks.pdf;/Users/phanthh/Academia/zotero/storage/GV8LBKXA/1511.html}
 }
 
 @misc{liLearningDeepGenerative2018,
@@ -610,7 +839,75 @@
   abstract = {Graphs are fundamental data structures which concisely capture the relational structure in many important real-world domains, such as knowledge graphs, physical and social interactions, language, and chemistry. Here we introduce a powerful new approach for learning generative models over graphs, which can capture both their structure and attributes. Our approach uses graph neural networks to express probabilistic dependencies among a graph's nodes and edges, and can, in principle, learn distributions over any arbitrary graph. In a series of experiments our results show that once trained, our models can generate good quality samples of both synthetic graphs as well as real molecular graphs, both unconditionally and conditioned on data. Compared to baselines that do not use graph-structured representations, our models often perform far better. We also explore key challenges of learning generative models of graphs, such as how to handle symmetries and ordering of elements during the graph generation process, and offer possible solutions. Our work is the first and most general approach for learning generative models over arbitrary graphs, and opens new directions for moving away from restrictions of vector- and sequence-like knowledge representations, toward more expressive and flexible relational data structures.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/5TGW2QMF/Li et al_2018_Learning Deep Generative Models of Graphs.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/5TGW2QMF/Li et al_2018_Learning Deep Generative Models of Graphs.pdf}
+}
+
+@misc{lippeCategoricalNormalizingFlows2021,
+  title = {Categorical {{Normalizing Flows}} via {{Continuous Transformations}}},
+  author = {Lippe, Phillip and Gavves, Efstratios},
+  year = {2021},
+  month = jan,
+  number = {arXiv:2006.09790},
+  eprint = {2006.09790},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2006.09790},
+  abstract = {Despite their popularity, to date, the application of normalizing flows on categorical data stays limited. The current practice of using dequantization to map discrete data to a continuous space is inapplicable as categorical data has no intrinsic order. Instead, categorical data have complex and latent relations that must be inferred, like the synonymy between words. In this paper, we investigate \textbackslash emph\{Categorical Normalizing Flows\}, that is normalizing flows for categorical data. By casting the encoding of categorical data in continuous space as a variational inference problem, we jointly optimize the continuous representation and the model likelihood. Using a factorized decoder, we introduce an inductive bias to model any interactions in the normalizing flow. As a consequence, we do not only simplify the optimization compared to having a joint decoder, but also make it possible to scale up to a large number of categories that is currently impossible with discrete normalizing flows. Based on Categorical Normalizing Flows, we propose GraphCNF a permutation-invariant generative model on graphs. GraphCNF implements a three step approach modeling the nodes, edges and adjacency matrix stepwise to increase efficiency. On molecule generation, GraphCNF outperforms both one-shot and autoregressive flow-based state-of-the-art.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/phanthh/Academia/zotero/storage/PJCKVBRT/Lippe and Gavves - 2021 - Categorical Normalizing Flows via Continuous Trans.pdf;/Users/phanthh/Academia/zotero/storage/SK73ZQII/2006.html}
+}
+
+@inproceedings{liScalableGradientsStochastic2020,
+  title = {Scalable {{Gradients}} for {{Stochastic Differential Equations}}},
+  booktitle = {Proceedings of the {{Twenty Third International Conference}} on {{Artificial Intelligence}} and {{Statistics}}},
+  author = {Li, Xuechen and Wong, Ting-Kam Leonard and Chen, Ricky T. Q. and Duvenaud, David},
+  year = {2020},
+  month = jun,
+  pages = {3870--3882},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  abstract = {The adjoint sensitivity method scalably computes gradients of solutions to ordinary differential equations. We generalize this method to stochastic differential equations, allowing time-efficient and constant-memory computation of gradients with high-order adaptive solvers. Specifically, we derive a stochastic differentialequation whose solution is the gradient, a memory-efficient algorithm for cachingnoise, and conditions under which numerical solutions converge. In addition, we combine our method with gradient-based stochastic variational inference for latent stochastic differential equations. We use our method to fit stochastic dynamics defined by neural networks, achieving competitive performance ona 50-dimensional motion capture dataset.},
+  langid = {english},
+  file = {/Users/phanthh/Academia/zotero/storage/422RT3X4/Li et al. - 2020 - Scalable Gradients for Stochastic Differential Equ.pdf;/Users/phanthh/Academia/zotero/storage/4U7IYXEG/Li et al. - 2020 - Scalable Gradients for Stochastic Differential Equ.pdf}
+}
+
+@inproceedings{liuConstrainedGraphVariational2018,
+  title = {Constrained {{Graph Variational Autoencoders}} for {{Molecule Design}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Liu, Qi and Allamanis, Miltiadis and Brockschmidt, Marc and Gaunt, Alexander},
+  year = {2018},
+  volume = {31},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {Graphs are ubiquitous data structures for representing interactions between entities. With an emphasis on applications in chemistry, we explore the task of learning to generate graphs that conform to a distribution observed in training data. We propose a variational autoencoder model in which both encoder and decoder are graph-structured. Our decoder assumes a sequential ordering of graph extension steps and we discuss and analyze design choices that mitigate the potential downsides of this linearization. Experiments compare our approach with a wide range of baselines on the molecule generation task and show that our method is successful at matching the statistics of the original dataset on semantically important metrics. Furthermore, we show that by using appropriate shaping of the latent space, our model allows us to design molecules that are (locally) optimal in desired properties.},
+  file = {/Users/phanthh/Academia/zotero/storage/RPMMFIGM/Liu et al. - 2018 - Constrained Graph Variational Autoencoders for Mol.pdf}
+}
+
+@inproceedings{liuGraphNormalizingFlows2019,
+  title = {Graph {{Normalizing Flows}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Liu, Jenny and Kumar, Aviral and Ba, Jimmy and Kiros, Jamie and Swersky, Kevin},
+  year = {2019},
+  volume = {32},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {We introduce graph normalizing flows: a new, reversible graph neural network model for prediction and generation. On supervised tasks, graph normalizing flows perform similarly to message passing neural networks, but at a significantly reduced memory footprint, allowing them to scale to larger graphs. In the unsupervised case, we combine graph normalizing flows with a novel graph auto-encoder to create a generative model of graph structures. Our model is permutation-invariant, generating entire graphs with a single feed-forward pass, and achieves competitive results with the state-of-the art auto-regressive models, while being better suited to parallel computing architectures.},
+  file = {/Users/phanthh/Academia/zotero/storage/MVUW8CQG/Liu et al. - 2019 - Graph Normalizing Flows.pdf}
+}
+
+@inproceedings{liutkusSlicedWassersteinFlowsNonparametric2019,
+  title = {Sliced-{{Wasserstein Flows}}: {{Nonparametric Generative Modeling}} via {{Optimal Transport}} and {{Diffusions}}},
+  shorttitle = {Sliced-{{Wasserstein Flows}}},
+  booktitle = {Proceedings of the 36th {{International Conference}} on {{Machine Learning}}},
+  author = {Liutkus, Antoine and Simsekli, Umut and Majewski, Szymon and Durmus, Alain and St{\"o}ter, Fabian-Robert},
+  year = {2019},
+  month = may,
+  pages = {4104--4113},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  abstract = {By building upon the recent theory that established the connection between implicit generative modeling (IGM) and optimal transport, in this study, we propose a novel parameter-free algorithm for learning the underlying distributions of complicated datasets and sampling from them. The proposed algorithm is based on a functional optimization problem, which aims at finding a measure that is close to the data distribution as much as possible and also expressive enough for generative modeling purposes. We formulate the problem as a gradient flow in the space of probability measures. The connections between gradient flows and stochastic differential equations let us develop a computationally efficient algorithm for solving the optimization problem. We provide formal theoretical analysis where we prove finite-time error guarantees for the proposed algorithm. To the best of our knowledge, the proposed algorithm is the first nonparametric IGM algorithm with explicit theoretical guarantees. Our experimental results support our theory and show that our algorithm is able to successfully capture the structure of different types of data distributions.},
+  langid = {english},
+  file = {/Users/phanthh/Academia/zotero/storage/BWVYCU8R/Liutkus et al. - 2019 - Sliced-Wasserstein Flows Nonparametric Generative.pdf;/Users/phanthh/Academia/zotero/storage/Q7UFIUIH/Liutkus et al. - 2019 - Sliced-Wasserstein Flows Nonparametric Generative.pdf}
 }
 
 @misc{luoGraphDFDiscreteFlow2021,
@@ -628,7 +925,18 @@
   abstract = {We consider the problem of molecular graph generation using deep models. While graphs are discrete, most existing methods use continuous latent variables, resulting in inaccurate modeling of discrete graph structures. In this work, we propose GraphDF, a novel discrete latent variable model for molecular graph generation based on normalizing flow methods. GraphDF uses invertible modulo shift transforms to map discrete latent variables to graph nodes and edges. We show that the use of discrete latent variables reduces computational costs and eliminates the negative effect of dequantization. Comprehensive experimental results show that GraphDF outperforms prior methods on random generation, property optimization, and constrained optimization tasks.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/ZZPYA25M/Luo et al_2021_GraphDF.pdf;/Users/phanthh/Zotero/storage/J9BR6DJE/2102.html}
+  file = {/Users/phanthh/Academia/zotero/storage/ZZPYA25M/Luo et al_2021_GraphDF.pdf;/Users/phanthh/Academia/zotero/storage/J9BR6DJE/2102.html}
+}
+
+@inproceedings{maConstrainedGenerationSemantically2018,
+  title = {Constrained {{Generation}} of {{Semantically Valid Graphs}} via {{Regularizing Variational Autoencoders}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Ma, Tengfei and Chen, Jie and Xiao, Cao},
+  year = {2018},
+  volume = {31},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {Deep generative models have achieved remarkable success in various data domains, including images, time series, and natural languages. There remain, however, substantial challenges for combinatorial structures, including graphs. One of the key challenges lies in the difficulty of ensuring semantic validity in context. For example, in molecular graphs, the number of bonding-electron pairs must not exceed the valence of an atom; whereas in protein interaction networks, two proteins may be connected only when they belong to the same or correlated gene ontology terms. These constraints are not easy to be incorporated into a generative model. In this work, we propose a regularization framework for variational autoencoders as a step toward semantic validity. We focus on the matrix representation of graphs and formulate penalty terms that regularize the output distribution of the decoder to encourage the satisfaction of validity constraints. Experimental results confirm a much higher likelihood of sampling valid graphs in our approach, compared with others reported in the literature.},
+  file = {/Users/phanthh/Academia/zotero/storage/EB964XM8/Ma et al. - 2018 - Constrained Generation of Semantically Valid Graph.pdf}
 }
 
 @misc{madhawaGraphNVPInvertibleFlow2019,
@@ -646,7 +954,53 @@
   abstract = {We propose GraphNVP, the first invertible, normalizing flow-based molecular graph generation model. We decompose the generation of a graph into two steps: generation of (i) an adjacency tensor and (ii) node attributes. This decomposition yields the exact likelihood maximization on graph-structured data, combined with two novel reversible flows. We empirically demonstrate that our model efficiently generates valid molecular graphs with almost no duplicated molecules. In addition, we observe that the learned latent space can be used to generate molecules with desired chemical properties.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/B9NQKAM8/Madhawa et al_2019_GraphNVP.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/B9NQKAM8/Madhawa et al_2019_GraphNVP.pdf}
+}
+
+@book{mallatWaveletTourSignal1999,
+  title = {A {{Wavelet Tour}} of {{Signal Processing}}},
+  author = {Mallat, Stephane},
+  year = {1999},
+  month = sep,
+  publisher = {{Elsevier}},
+  abstract = {This book is intended to serve as an invaluable reference for anyone concerned with the application of wavelets to signal processing. It has evolved from material used to teach "wavelet signal processing" courses in electrical engineering departments at Massachusetts Institute of Technology and Tel Aviv University, as well as applied mathematics departments at the Courant Institute of New York University and \'EcolePolytechnique in Paris. Provides a broad perspective on the principles and applications of transient signal processing with wavelets Emphasizes intuitive understanding, while providing the mathematical foundations and description of fast algorithms Numerous examples of real applications to noise removal, deconvolution, audio and image compression, singularity and edge detection, multifractal analysis, and time-varying frequency measurements Algorithms and numerical examples are implemented in Wavelab, which is a Matlab toolbox freely available over the Internet Content is accessible on several level of complexity, depending on the individual reader's needs New to the Second Edition  Optical flow calculation and video compression algorithms Image models with bounded variation functions Bayes and Minimax theories for signal estimation 200 pages rewritten and most illustrations redrawn More problems and topics for a graduate course in wavelet signal processing, in engineering and applied mathematics},
+  googlebooks = {hbVOfWQNtB8C},
+  isbn = {978-0-08-052083-4},
+  langid = {english},
+  keywords = {Computers / Computer Science,Computers / Information Theory,Computers / Programming / Algorithms,Education / Vocational \& Technical,Mathematics / Applied,Mathematics / General,Mathematics / Mathematical Analysis,Mathematics / Numerical Analysis,Sports \& Recreation / Business Aspects,Technology \& Engineering / Electrical,Technology \& Engineering / Microwaves,Technology \& Engineering / Signals \& Signal Processing}
+}
+
+@misc{morganGenerationUniqueMachine2002,
+  type = {Research-Article},
+  title = {The {{Generation}} of a {{Unique Machine Description}} for {{Chemical Structures-A Technique Developed}} at {{Chemical Abstracts Service}}.},
+  author = {Morgan, H. L.},
+  year = {2002},
+  month = may,
+  journal = {ACS Publications},
+  publisher = {{American Chemical Society}},
+  doi = {10.1021/c160017a018},
+  howpublished = {https://pubs.acs.org/doi/pdf/10.1021/c160017a018},
+  langid = {english},
+  file = {/Users/phanthh/Academia/zotero/storage/CG2NYPSM/c160017a018.html}
+}
+
+@article{mullardDrugmakerGuideGalaxy2017,
+  title = {The Drug-Maker's Guide to the Galaxy},
+  author = {Mullard, Asher},
+  year = {2017},
+  month = sep,
+  journal = {Nature},
+  volume = {549},
+  number = {7673},
+  pages = {445--447},
+  publisher = {{Nature Publishing Group}},
+  issn = {1476-4687},
+  doi = {10.1038/549445a},
+  abstract = {How machine learning and big data are helping chemists search the vast chemical universe for better medicines.},
+  copyright = {2017 Nature Publishing Group},
+  langid = {english},
+  keywords = {Chemistry,Computer science,Drug discovery},
+  file = {/Users/phanthh/Academia/zotero/storage/3LIP43MQ/Mullard - 2017 - The drug-maker's guide to the galaxy.pdf;/Users/phanthh/Academia/zotero/storage/9MBGSAQY/549445a.html}
 }
 
 @misc{mullerNeuralImportanceSampling2019,
@@ -663,7 +1017,7 @@
   abstract = {We propose to use deep neural networks for generating samples in Monte Carlo integration. Our work is based on non-linear independent components estimation (NICE), which we extend in numerous ways to improve performance and enable its application to integration problems. First, we introduce piecewise-polynomial coupling transforms that greatly increase the modeling power of individual coupling layers. Second, we propose to preprocess the inputs of neural networks using one-blob encoding, which stimulates localization of computation and improves inference. Third, we derive a gradient-descent-based optimization for the KL and the \$\textbackslash chi\^2\$ divergence for the specific application of Monte Carlo integration with unnormalized stochastic estimates of the target distribution. Our approach enables fast and accurate inference and efficient sample generation independently of the dimensionality of the integration domain. We show its benefits on generating natural images and in two applications to light-transport simulation: first, we demonstrate learning of joint path-sampling densities in the primary sample space and importance sampling of multi-dimensional path prefixes thereof. Second, we use our technique to extract conditional directional densities driven by the product of incident illumination and the BSDF in the rendering equation, and we leverage the densities for path guiding. In all applications, our approach yields on-par or higher performance than competing techniques at equal sample count.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Graphics,Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/W7JK8XXI/Müller et al_2019_Neural Importance Sampling.pdf;/Users/phanthh/Zotero/storage/YQ877UID/1808.html}
+  file = {/Users/phanthh/Academia/zotero/storage/W7JK8XXI/Müller et al_2019_Neural Importance Sampling.pdf;/Users/phanthh/Academia/zotero/storage/YQ877UID/1808.html}
 }
 
 @inproceedings{papamakariosMaskedAutoregressiveFlow2017,
@@ -674,7 +1028,7 @@
   volume = {30},
   publisher = {{Curran Associates, Inc.}},
   abstract = {Autoregressive models are among the best performing neural density estimators. We describe an approach for increasing the flexibility of an autoregressive model, based on modelling the random numbers that the model uses internally when generating data. By constructing a stack of autoregressive models, each modelling the random numbers of the next model in the stack, we obtain a type of normalizing flow suitable for density estimation, which we call Masked Autoregressive Flow. This type of flow is closely related to Inverse Autoregressive Flow and is a generalization of Real NVP. Masked Autoregressive Flow achieves state-of-the-art performance in a range of general-purpose density estimation tasks.},
-  file = {/Users/phanthh/Zotero/storage/3ZEL6GG2/Papamakarios et al_2017_Masked Autoregressive Flow for Density Estimation.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/3ZEL6GG2/Papamakarios et al_2017_Masked Autoregressive Flow for Density Estimation.pdf}
 }
 
 @misc{papamakariosNormalizingFlowsProbabilistic2021,
@@ -691,7 +1045,7 @@
   abstract = {Normalizing flows provide a general mechanism for defining expressive probability distributions, only requiring the specification of a (usually simple) base distribution and a series of bijective transformations. There has been much recent work on normalizing flows, ranging from improving their expressive power to expanding their application. We believe the field has now matured and is in need of a unified perspective. In this review, we attempt to provide such a perspective by describing flows through the lens of probabilistic modeling and inference. We place special emphasis on the fundamental principles of flow design, and discuss foundational topics such as expressive power and computational trade-offs. We also broaden the conceptual framing of flows by relating them to more general probability transformations. Lastly, we summarize the use of flows for tasks such as generative modeling, approximate inference, and supervised learning.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/M4V43TD8/Papamakarios et al_2021_Normalizing Flows for Probabilistic Modeling and Inference.pdf;/Users/phanthh/Zotero/storage/UPF3FMLK/1912.html}
+  file = {/Users/phanthh/Academia/zotero/storage/M4V43TD8/Papamakarios et al_2021_Normalizing Flows for Probabilistic Modeling and Inference.pdf;/Users/phanthh/Academia/zotero/storage/UPF3FMLK/1912.html}
 }
 
 @article{parrDiscreteContinuousBrain2018,
@@ -709,7 +1063,61 @@
   abstract = {To act upon the world, creatures must change continuous variables such as muscle length or chemical concentration. In contrast, decision making is an inherently discrete process, involving the selection among alternative courses of action. In this article, we consider the interface between the discrete and continuous processes that translate our decisions into movement in a Newtonian world\textemdash and how movement informs our decisions. We do so by appealing to active inference, with a special focus on the oculomotor system. Within this exemplar system, we argue that the superior colliculus is well placed to act as a discrete-continuous interface. Interestingly, when the neuronal computations within the superior colliculus are formulated in terms of active inference, we find that many aspects of its neuroanatomy emerge from the computations it must perform in this role.},
   pmcid = {PMC6115199},
   pmid = {29894658},
-  file = {/Users/phanthh/Zotero/storage/YQPHHJIM/Parr_Friston_2018_The Discrete and Continuous Brain.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/YQPHHJIM/Parr_Friston_2018_The Discrete and Continuous Brain.pdf}
+}
+
+@article{paulHowImproveProductivity2010,
+  title = {How to Improve {{R}}\&{{D}} Productivity: The Pharmaceutical Industry's Grand Challenge},
+  shorttitle = {How to Improve {{R}}\&{{D}} Productivity},
+  author = {Paul, Steven M. and Mytelka, Daniel S. and Dunwiddie, Christopher T. and Persinger, Charles C. and Munos, Bernard H. and Lindborg, Stacy R. and Schacht, Aaron L.},
+  year = {2010},
+  month = mar,
+  journal = {Nature Reviews Drug Discovery},
+  volume = {9},
+  number = {3},
+  pages = {203--214},
+  publisher = {{Nature Publishing Group}},
+  issn = {1474-1784},
+  doi = {10.1038/nrd3078},
+  abstract = {The biopharmaceutical industry is facing unprecedented challenges to its fundamental business model and currently cannot sustain sufficient innovation to replace its products and revenues lost due to patent expirations.The number of truly innovative new medicines approved by regulatory agencies such as the US Food and Drug Administration has declined substantially despite continued increases in R\&D spending, raising the current cost of each new molecular entity (NME) to approximately US\$1.8 billionDeclining R\&D productivity is arguably the most important challenge the industry faces and thus improving R\&D productivity is its most important priority.A detailed analysis of the key elements that determine overall R\&D productivity and the cost to successfully develop an NME reveals exactly where (and to what degree) R\&D productivity can (and must) be improved.Reducing late-stage (Phase II and III) attrition rates and cycle times during drug development are among the key requirements for improving R\&D productivity.To achieve the necessary increase in R\&D productivity, R\&D investments, both financial and intellectual, must be focused on the 'sweet spot' of drug discovery and early clinical development, from target selection to clinical proof-of-concept.The transformation from a traditional biopharmaceutical FIPCo (fully integrated pharmaceutical company) to a FIPNet (fully integrated pharmaceutical network) should allow a given R\&D organization to 'play bigger than its size' and to more affordably fund the necessary number and quality of pipeline assets.},
+  copyright = {2010 Nature Publishing Group},
+  langid = {english},
+  keywords = {Business strategy in drug development,Drug development,Industry},
+  file = {/Users/phanthh/Academia/zotero/storage/EF68Y6H9/nrd3078.html}
+}
+
+@article{ramakrishnanQuantumChemistryStructures2014,
+  title = {Quantum Chemistry Structures and Properties of 134 Kilo Molecules},
+  author = {Ramakrishnan, Raghunathan and Dral, Pavlo O. and Rupp, Matthias and {von Lilienfeld}, O. Anatole},
+  year = {2014},
+  month = aug,
+  journal = {Scientific Data},
+  volume = {1},
+  number = {1},
+  pages = {140022},
+  publisher = {{Nature Publishing Group}},
+  issn = {2052-4463},
+  doi = {10.1038/sdata.2014.22},
+  abstract = {Computational de novo design of new drugs and materials requires rigorous and unbiased exploration of chemical compound space. However, large uncharted territories persist due to its size scaling combinatorially with molecular size. We report computed geometric, energetic, electronic, and thermodynamic properties for 134k stable small organic molecules made up of CHONF. These molecules correspond to the subset of all 133,885 species with up to nine heavy atoms (CONF) out of the GDB-17 chemical universe of 166 billion organic molecules. We report geometries minimal in energy, corresponding harmonic frequencies, dipole moments, polarizabilities, along with energies, enthalpies, and free energies of atomization. All properties were calculated at the B3LYP/6-31G(2df,p) level of quantum chemistry. Furthermore, for the predominant stoichiometry, C7H10O2, there are 6,095 constitutional isomers among the 134k molecules. We report energies, enthalpies, and free energies of atomization at the more accurate G4MP2 level of theory for all of them. As such, this data set provides quantum chemical properties for a relevant, consistent, and comprehensive chemical space of small organic molecules. This database may serve the benchmarking of existing methods, development of new methods, such as hybrid quantum mechanics/machine learning, and systematic identification of structure-property relationships.},
+  copyright = {2014 The Author(s)},
+  langid = {english},
+  keywords = {Computational chemistry,Density functional theory,Quantum chemistry},
+  file = {/Users/phanthh/Academia/zotero/storage/5ZJSRTK6/Ramakrishnan et al. - 2014 - Quantum chemistry structures and properties of 134.pdf;/Users/phanthh/Academia/zotero/storage/FDSSNFEX/sdata201422.html}
+}
+
+@article{rogersExtendedConnectivityFingerprints2010,
+  title = {Extended-{{Connectivity Fingerprints}}},
+  author = {Rogers, David and Hahn, Mathew},
+  year = {2010},
+  month = may,
+  journal = {Journal of Chemical Information and Modeling},
+  volume = {50},
+  number = {5},
+  pages = {742--754},
+  publisher = {{American Chemical Society}},
+  issn = {1549-9596},
+  doi = {10.1021/ci100050t},
+  abstract = {Extended-connectivity fingerprints (ECFPs) are a novel class of topological fingerprints for molecular characterization. Historically, topological fingerprints were developed for substructure and similarity searching. ECFPs were developed specifically for structure-activity modeling. ECFPs are circular fingerprints with a number of useful qualities: they can be very rapidly calculated; they are not predefined and can represent an essentially infinite number of different molecular features (including stereochemical information); their features represent the presence of particular substructures, allowing easier interpretation of analysis results; and the ECFP algorithm can be tailored to generate different types of circular fingerprints, optimized for different uses. While the use of ECFPs has been widely adopted and validated, a description of their implementation has not previously been presented in the literature.}
 }
 
 @inproceedings{satorrasEquivariantGraphNeural2021,
@@ -723,7 +1131,7 @@
   issn = {2640-3498},
   abstract = {This paper introduces a new model to learn graph neural networks equivariant to rotations, translations, reflections and permutations called E(n)-Equivariant Graph Neural Networks (EGNNs). In contrast with existing methods, our work does not require computationally expensive higher-order representations in intermediate layers while it still achieves competitive or better performance. In addition, whereas existing methods are limited to equivariance on 3 dimensional spaces, our model is easily scaled to higher-dimensional spaces. We demonstrate the effectiveness of our method on dynamical systems modelling, representation learning in graph autoencoders and predicting molecular properties.},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/F4BEM6U5/Satorras et al_2021_E(n) Equivariant Graph Neural Networks.pdf;/Users/phanthh/Zotero/storage/HK8ES9XF/Satorras et al. - 2021 - E(n) Equivariant Graph Neural Networks.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/F4BEM6U5/Satorras et al_2021_E(n) Equivariant Graph Neural Networks.pdf;/Users/phanthh/Academia/zotero/storage/HK8ES9XF/Satorras et al. - 2021 - E(n) Equivariant Graph Neural Networks.pdf}
 }
 
 @article{scarselliGraphNeuralNetwork2009,
@@ -739,7 +1147,7 @@
   doi = {10.1109/TNN.2008.2005605},
   abstract = {Many underlying relationships among data in several areas of science and engineering, e.g., computer vision, molecular chemistry, molecular biology, pattern recognition, and data mining, can be represented in terms of graphs. In this paper, we propose a new neural network model, called graph neural network (GNN) model, that extends existing neural network methods for processing the data represented in graph domains. This GNN model, which can directly process most of the practically useful types of graphs, e.g., acyclic, cyclic, directed, and undirected, implements a function tau(G,n) isin IRm that maps a graph G and one of its nodes n into an m-dimensional Euclidean space. A supervised learning algorithm is derived to estimate the parameters of the proposed GNN model. The computational cost of the proposed algorithm is also considered. Some experimental results are shown to validate the proposed learning algorithm, and to demonstrate its generalization capabilities.},
   keywords = {Biological system modeling,Biology,Chemistry,Computer vision,Data engineering,Data mining,graph neural networks (GNNs),graph processing,Graphical domains,Neural networks,Parameter estimation,Pattern recognition,recursive neural networks,Supervised learning},
-  file = {/Users/phanthh/Zotero/storage/C36A3XA2/Scarselli et al. - 2009 - The Graph Neural Network Model.pdf;/Users/phanthh/Zotero/storage/JXBPKJNH/Scarselli et al_2009_The Graph Neural Network Model.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/C36A3XA2/Scarselli et al. - 2009 - The Graph Neural Network Model.pdf;/Users/phanthh/Academia/zotero/storage/JXBPKJNH/Scarselli et al_2009_The Graph Neural Network Model.pdf}
 }
 
 @inproceedings{schlichtkrullModelingRelationalData2018,
@@ -756,7 +1164,7 @@
   abstract = {Knowledge graphs enable a wide variety of applications, including question answering and information retrieval. Despite the great effort invested in their creation and maintenance, even the largest (e.g., Yago, DBPedia or Wikidata) remain incomplete. We introduce Relational Graph Convolutional Networks (R-GCNs) and apply them to two standard knowledge base completion tasks: Link prediction (recovery of missing facts, i.e.~subject-predicate-object triples) and entity classification (recovery of missing entity attributes). R-GCNs are related to a recent class of neural networks operating on graphs, and are developed specifically to handle the highly multi-relational data characteristic of realistic knowledge bases. We demonstrate the effectiveness of R-GCNs as a stand-alone model for entity classification. We further show that factorization models for link prediction such as DistMult can be significantly improved through the use of an R-GCN encoder model to accumulate evidence over multiple inference steps in the graph, demonstrating a large improvement of 29.8\% on FB15k-237 over a decoder-only baseline.},
   isbn = {978-3-319-93417-4},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/AVAAH987/Schlichtkrull et al_2018_Modeling Relational Data with Graph Convolutional Networks.pdf;/Users/phanthh/Zotero/storage/VY7X2VK8/Schlichtkrull et al. - 2018 - Modeling Relational Data with Graph Convolutional .pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/AVAAH987/Schlichtkrull et al_2018_Modeling Relational Data with Graph Convolutional Networks.pdf;/Users/phanthh/Academia/zotero/storage/VY7X2VK8/Schlichtkrull et al. - 2018 - Modeling Relational Data with Graph Convolutional .pdf}
 }
 
 @misc{shiGraphAFFlowbasedAutoregressive2020,
@@ -774,7 +1182,7 @@
   abstract = {Molecular graph generation is a fundamental problem for drug discovery and has been attracting growing attention. The problem is challenging since it requires not only generating chemically valid molecular structures but also optimizing their chemical properties in the meantime. Inspired by the recent progress in deep generative models, in this paper we propose a flow-based autoregressive model for graph generation called GraphAF. GraphAF combines the advantages of both autoregressive and flow-based approaches and enjoys: (1) high model flexibility for data density estimation; (2) efficient parallel computation for training; (3) an iterative sampling process, which allows leveraging chemical domain knowledge for valency checking. Experimental results show that GraphAF is able to generate 68\% chemically valid molecules even without chemical knowledge rules and 100\% valid molecules with chemical rules. The training process of GraphAF is two times faster than the existing state-of-the-art approach GCPN. After fine-tuning the model for goal-directed property optimization with reinforcement learning, GraphAF achieves state-of-the-art performance on both chemical property optimization and constrained property optimization.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/VNAYY7VR/Shi et al_2020_GraphAF.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/VNAYY7VR/Shi et al_2020_GraphAF.pdf}
 }
 
 @inproceedings{simonovskyGraphVAEGenerationSmall2018,
@@ -792,7 +1200,7 @@
   abstract = {Deep learning on graphs has become a popular research topic with many applications. However, past work has concentrated on learning graph embedding tasks, which is in contrast with advances in generative models for images and text. Is it possible to transfer this progress to the domain of graphs? We propose to sidestep hurdles associated with linearization of such discrete structures by having a decoder output a probabilistic fully-connected graph of a predefined maximum size directly at once. Our method is formulated as a variational autoencoder. We evaluate on the challenging task of molecule generation.},
   isbn = {978-3-030-01418-6},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/27G26MTF/Simonovsky_Komodakis_2018_GraphVAE.pdf;/Users/phanthh/Zotero/storage/AI5PVIML/Simonovsky and Komodakis - 2018 - GraphVAE Towards Generation of Small Graphs Using.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/27G26MTF/Simonovsky_Komodakis_2018_GraphVAE.pdf;/Users/phanthh/Academia/zotero/storage/AI5PVIML/Simonovsky and Komodakis - 2018 - GraphVAE Towards Generation of Small Graphs Using.pdf}
 }
 
 @misc{tomczakImprovingVariationalAutoEncoders2017,
@@ -809,7 +1217,60 @@
   abstract = {In this paper, we propose a new volume-preserving flow and show that it performs similarly to the linear general normalizing flow. The idea is to enrich a linear Inverse Autoregressive Flow by introducing multiple lower-triangular matrices with ones on the diagonal and combining them using a convex combination. In the experimental studies on MNIST and Histopathology data we show that the proposed approach outperforms other volume-preserving flows and is competitive with current state-of-the-art linear normalizing flow.},
   archiveprefix = {arXiv},
   keywords = {Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/WFX4SSWC/Tomczak_Welling_2017_Improving Variational Auto-Encoders using convex combination linear Inverse.pdf;/Users/phanthh/Zotero/storage/YKBCW5II/1706.html}
+  file = {/Users/phanthh/Academia/zotero/storage/WFX4SSWC/Tomczak_Welling_2017_Improving Variational Auto-Encoders using convex combination linear Inverse.pdf;/Users/phanthh/Academia/zotero/storage/YKBCW5II/1706.html}
+}
+
+@inproceedings{tranDiscreteFlowsInvertible2019,
+  title = {Discrete {{Flows}}: {{Invertible Generative Models}} of {{Discrete Data}}},
+  shorttitle = {Discrete {{Flows}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Tran, Dustin and Vafa, Keyon and Agrawal, Kumar and Dinh, Laurent and Poole, Ben},
+  year = {2019},
+  volume = {32},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {While normalizing flows have led to significant advances in modeling high-dimensional continuous distributions, their applicability to discrete distributions remains unknown. In this paper, we show that flows can in fact be extended to discrete events---and under a simple change-of-variables formula not requiring log-determinant-Jacobian computations. Discrete flows have numerous applications. We consider two flow architectures: discrete autoregressive flows that enable bidirectionality, allowing, for example, tokens in text to depend on both left-to-right and right-to-left contexts in an exact language model; and discrete bipartite flows that enable efficient non-autoregressive generation as in RealNVP. Empirically, we find that discrete autoregressive flows outperform autoregressive baselines on synthetic discrete distributions, an addition task, and Potts models; and bipartite flows can obtain competitive performance with autoregressive baselines on character-level language modeling for Penn Tree Bank and text8.},
+  file = {/Users/phanthh/Academia/zotero/storage/QGKMCGHC/Tran et al. - 2019 - Discrete Flows Invertible Generative Models of Di.pdf}
+}
+
+@misc{tzenNeuralStochasticDifferential2019,
+  title = {Neural {{Stochastic Differential Equations}}: {{Deep Latent Gaussian Models}} in the {{Diffusion Limit}}},
+  shorttitle = {Neural {{Stochastic Differential Equations}}},
+  author = {Tzen, Belinda and Raginsky, Maxim},
+  year = {2019},
+  month = oct,
+  number = {arXiv:1905.09883},
+  eprint = {1905.09883},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1905.09883},
+  abstract = {In deep latent Gaussian models, the latent variable is generated by a time-inhomogeneous Markov chain, where at each time step we pass the current state through a parametric nonlinear map, such as a feedforward neural net, and add a small independent Gaussian perturbation. This work considers the diffusion limit of such models, where the number of layers tends to infinity, while the step size and the noise variance tend to zero. The limiting latent object is an It\textbackslash\^o diffusion process that solves a stochastic differential equation (SDE) whose drift and diffusion coefficient are implemented by neural nets. We develop a variational inference framework for these \textbackslash textit\{neural SDEs\} via stochastic automatic differentiation in Wiener space, where the variational approximations to the posterior are obtained by Girsanov (mean-shift) transformation of the standard Wiener process and the computation of gradients is based on the theory of stochastic flows. This permits the use of black-box SDE solvers and automatic differentiation for end-to-end inference. Experimental results with synthetic data are provided.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/phanthh/Academia/zotero/storage/W5S9GHJL/Tzen and Raginsky - 2019 - Neural Stochastic Differential Equations Deep Lat.pdf;/Users/phanthh/Academia/zotero/storage/YE6F9DM7/1905.html}
+}
+
+@inproceedings{uriaRNADERealvaluedNeural2013,
+  title = {{{RNADE}}: {{The}} Real-Valued Neural Autoregressive Density-Estimator},
+  shorttitle = {{{RNADE}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Uria, Benigno and Murray, Iain and Larochelle, Hugo},
+  year = {2013},
+  volume = {26},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {We introduce RNADE, a new model for joint density estimation of real-valued vectors. Our model calculates the density of a datapoint as the product of one-dimensional conditionals modeled using mixture density networks with shared parameters. RNADE learns a distributed representation of the data, while having a tractable expression for the calculation of densities. A tractable likelihood allows direct comparison with other methods and training by standard gradient-based optimizers. We compare the performance of RNADE on several datasets of heterogeneous and perceptual data, finding it outperforms mixture models in all but one case.},
+  file = {/Users/phanthh/Academia/zotero/storage/XN69JMY8/Uria et al. - 2013 - RNADE The real-valued neural autoregressive densi.pdf}
+}
+
+@inproceedings{vaswaniAttentionAllYou2017,
+  title = {Attention Is {{All}} You {{Need}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  year = {2017},
+  volume = {30},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms.  We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.},
+  file = {/Users/phanthh/Academia/zotero/storage/2896ZR76/Vaswani et al. - 2017 - Attention is All you Need.pdf}
 }
 
 @misc{velickovicGraphAttentionNetworks2018,
@@ -826,7 +1287,7 @@
   abstract = {We present graph attention networks (GATs), novel neural network architectures that operate on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods' features, we enable (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront. In this way, we address several key challenges of spectral-based graph neural networks simultaneously, and make our model readily applicable to inductive as well as transductive problems. Our GAT models have achieved or matched state-of-the-art results across four established transductive and inductive graph benchmarks: the Cora, Citeseer and Pubmed citation network datasets, as well as a protein-protein interaction dataset (wherein test graphs remain unseen during training).},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Social and Information Networks,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/YPNFFJQ6/Veličković et al_2018_Graph Attention Networks.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/YPNFFJQ6/Veličković et al_2018_Graph Attention Networks.pdf}
 }
 
 @book{villaniTopicsOptimalTransportation2003,
@@ -841,6 +1302,25 @@
   keywords = {Mathematics / General}
 }
 
+@article{wangMulticonstraintMolecularGeneration2021,
+  title = {Multi-Constraint Molecular Generation Based on Conditional Transformer, Knowledge Distillation and Reinforcement Learning},
+  author = {Wang, Jike and Hsieh, Chang-Yu and Wang, Mingyang and Wang, Xiaorui and Wu, Zhenxing and Jiang, Dejun and Liao, Benben and Zhang, Xujun and Yang, Bo and He, Qiaojun and Cao, Dongsheng and Chen, Xi and Hou, Tingjun},
+  year = {2021},
+  month = oct,
+  journal = {Nature Machine Intelligence},
+  volume = {3},
+  number = {10},
+  pages = {914--922},
+  publisher = {{Nature Publishing Group}},
+  issn = {2522-5839},
+  doi = {10.1038/s42256-021-00403-1},
+  abstract = {Machine learning-based generative models can generate novel molecules with desirable physiochemical and pharmacological properties from scratch. Many excellent generative models have been proposed, but multi-objective optimizations in molecular generative tasks are still quite challenging for most existing models. Here we proposed the multi-constraint molecular generation (MCMG) approach that can satisfy multiple constraints by combining conditional transformer and reinforcement learning algorithms through knowledge distillation. A conditional transformer was used to train a molecular generative model by efficiently learning and incorporating the structure\textendash property relations into a biased generative process. A knowledge distillation model was then employed to reduce the model's complexity so that it can be efficiently fine-tuned by reinforcement learning and enhance the structural diversity of the generated molecules. As demonstrated by a set of comprehensive benchmarks, MCMG is a highly effective approach to traverse large and complex chemical space in search of novel compounds that satisfy multiple property constraints.},
+  copyright = {2021 The Author(s), under exclusive licence to Springer Nature Limited},
+  langid = {english},
+  keywords = {Cheminformatics,Machine learning},
+  file = {/Users/phanthh/Academia/zotero/storage/ZKNYSYNF/s42256-021-00403-1.html}
+}
+
 @inproceedings{wehenkelUnconstrainedMonotonicNeural2019,
   title = {Unconstrained {{Monotonic Neural Networks}}},
   booktitle = {Advances in {{Neural Information Processing Systems}}},
@@ -849,7 +1329,21 @@
   volume = {32},
   publisher = {{Curran Associates, Inc.}},
   abstract = {Monotonic neural networks have recently been proposed as a way to define invertible transformations. These transformations can be combined into powerful autoregressive flows that have been shown to be universal approximators of continuous probability distributions. Architectures that ensure monotonicity typically enforce constraints on weights and activation functions, which enables invertibility but leads to a cap on the expressiveness of the resulting transformations.  In this work, we propose the Unconstrained Monotonic Neural Network (UMNN) architecture based on the insight that a function is monotonic as long as its derivative is strictly positive. In particular, this latter condition can be enforced with a free-form neural network whose only constraint is the positiveness of its output.  We evaluate our new invertible building block within a new autoregressive flow (UMNN-MAF) and demonstrate its effectiveness on density estimation experiments.  We also illustrate the ability of UMNNs to improve variational inference.},
-  file = {/Users/phanthh/Zotero/storage/4E7UWJ9P/Wehenkel_Louppe_2019_Unconstrained Monotonic Neural Networks.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/4E7UWJ9P/Wehenkel_Louppe_2019_Unconstrained Monotonic Neural Networks.pdf}
+}
+
+@misc{weiningerSMILESAlgorithmGeneration2002,
+  type = {Research-Article},
+  title = {{{SMILES}}. 2. {{Algorithm}} for Generation of Unique {{SMILES}} Notation},
+  author = {Weininger, David and Weininger, Arthur and Weininger, Joseph L.},
+  year = {2002},
+  month = may,
+  journal = {ACS Publications},
+  publisher = {{American Chemical Society}},
+  doi = {10.1021/ci00062a008},
+  howpublished = {https://pubs.acs.org/doi/pdf/10.1021/ci00062a008},
+  langid = {english},
+  file = {/Users/phanthh/Academia/zotero/storage/BIASZYZB/ci00062a008.html}
 }
 
 @article{wuComprehensiveSurveyGraph2021,
@@ -869,7 +1363,7 @@
   abstract = {Deep learning has revolutionized many machine learning tasks in recent years, ranging from image classification and video processing to speech recognition and natural language understanding. The data in these tasks are typically represented in the Euclidean space. However, there is an increasing number of applications where data are generated from non-Euclidean domains and are represented as graphs with complex relationships and interdependency between objects. The complexity of graph data has imposed significant challenges on existing machine learning algorithms. Recently, many studies on extending deep learning approaches for graph data have emerged. In this survey, we provide a comprehensive overview of graph neural networks (GNNs) in data mining and machine learning fields. We propose a new taxonomy to divide the state-of-the-art graph neural networks into four categories, namely recurrent graph neural networks, convolutional graph neural networks, graph autoencoders, and spatial-temporal graph neural networks. We further discuss the applications of graph neural networks across various domains and summarize the open source codes, benchmark data sets, and model evaluation of graph neural networks. Finally, we propose potential research directions in this rapidly growing field.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/6QR695XB/Wu et al_2021_A Comprehensive Survey on Graph Neural Networks.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/6QR695XB/Wu et al_2021_A Comprehensive Survey on Graph Neural Networks.pdf}
 }
 
 @article{xiaGraphbasedGenerativeModels2019,
@@ -887,6 +1381,54 @@
   langid = {english}
 }
 
+@misc{xuEmpiricalEvaluationRectified2015,
+  title = {Empirical {{Evaluation}} of {{Rectified Activations}} in {{Convolutional Network}}},
+  author = {Xu, Bing and Wang, Naiyan and Chen, Tianqi and Li, Mu},
+  year = {2015},
+  month = nov,
+  number = {arXiv:1505.00853},
+  eprint = {1505.00853},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1505.00853},
+  abstract = {In this paper we investigate the performance of different types of rectified activation functions in convolutional neural network: standard rectified linear unit (ReLU), leaky rectified linear unit (Leaky ReLU), parametric rectified linear unit (PReLU) and a new randomized leaky rectified linear units (RReLU). We evaluate these activation function on standard image classification task. Our experiments suggest that incorporating a non-zero slope for negative part in rectified activation units could consistently improve the results. Thus our findings are negative on the common belief that sparsity is the key of good performance in ReLU. Moreover, on small scale dataset, using deterministic negative slope or learning it are both prone to overfitting. They are not as effective as using their randomized counterpart. By using RReLU, we achieved 75.68\textbackslash\% accuracy on CIFAR-100 test set without multiple test or ensemble.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/phanthh/Academia/zotero/storage/PTPXT238/Xu et al_2015_Empirical Evaluation of Rectified Activations in Convolutional Network.pdf;/Users/phanthh/Academia/zotero/storage/ANYEJCBQ/1505.html}
+}
+
+@article{yangChemTSEfficientPython2017,
+  title = {{{ChemTS}}: An Efficient Python Library for de Novo Molecular Generation},
+  shorttitle = {{{ChemTS}}},
+  author = {Yang, Xiufeng and Zhang, Jinzhe and Yoshizoe, Kazuki and Terayama, Kei and Tsuda, Koji},
+  year = {2017},
+  month = dec,
+  journal = {Science and Technology of Advanced Materials},
+  volume = {18},
+  number = {1},
+  pages = {972--976},
+  publisher = {{Taylor \& Francis}},
+  issn = {1468-6996},
+  doi = {10.1080/14686996.2017.1401424},
+  abstract = {Automatic design of organic materials requires black-box optimization in a vast chemical space. In conventional molecular design algorithms, a molecule is built as a combination of predetermined fragments. Recently, deep neural network models such as variational autoencoders and recurrent neural networks (RNNs) are shown to be effective in de novo design of molecules without any predetermined fragments. This paper presents a novel Python library ChemTS that explores the chemical space by combining Monte Carlo tree search and an RNN. In a benchmarking problem of optimizing the octanol-water partition coefficient and synthesizability, our algorithm showed superior efficiency in finding high-scoring molecules. ChemTS is available at https://github.com/tsudalab/ChemTS.},
+  pmid = {29435094},
+  keywords = {404 Materials informatics / Genomics,60 New topics/Others,Molecular design,Monte Carlo tree search,python library,recurrent neural network},
+  annotation = {\_eprint: https://doi.org/10.1080/14686996.2017.1401424},
+  file = {/Users/phanthh/Academia/zotero/storage/N28UBEVI/Yang et al_2017_ChemTS.pdf}
+}
+
+@inproceedings{youGraphConvolutionalPolicy2018,
+  title = {Graph {{Convolutional Policy Network}} for {{Goal-Directed Molecular Graph Generation}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {You, Jiaxuan and Liu, Bowen and Ying, Zhitao and Pande, Vijay and Leskovec, Jure},
+  year = {2018},
+  volume = {31},
+  publisher = {{Curran Associates, Inc.}},
+  abstract = {Generating novel graph structures that optimize given objectives while obeying some given underlying rules is fundamental for chemistry, biology and social science research. This is especially important in the task of molecular graph generation, whose goal is to discover novel molecules with desired properties such as drug-likeness and synthetic accessibility, while obeying physical laws such as chemical valency. However, designing models that finds molecules that optimize desired properties while incorporating highly complex and non-differentiable rules remains to be a challenging task. Here we propose Graph Convolutional Policy Network (GCPN), a general graph convolutional network based model for goal-directed graph generation through reinforcement learning. The model is trained to optimize domain-specific rewards and adversarial loss through policy gradient, and acts in an environment that incorporates domain-specific rules. Experimental results show that GCPN can achieve 61\% improvement on chemical property optimization over state-of-the-art baselines while resembling known molecules, and achieve 184\% improvement on the constrained property optimization task.},
+  file = {/Users/phanthh/Academia/zotero/storage/Q3MNZRSR/You et al. - 2018 - Graph Convolutional Policy Network for Goal-Direct.pdf}
+}
+
 @inproceedings{youGraphRNNGeneratingRealistic2018,
   title = {{{GraphRNN}}: {{Generating Realistic Graphs}} with {{Deep Auto-regressive Models}}},
   shorttitle = {{{GraphRNN}}},
@@ -899,7 +1441,7 @@
   issn = {2640-3498},
   abstract = {Modeling and generating graphs is fundamental for studying networks in biology, engineering, and social sciences. However, modeling complex distributions over graphs and then efficiently sampling from these distributions is challenging due to the non-unique, high-dimensional nature of graphs and the complex, non-local dependencies that exist between edges in a given graph. Here we propose GraphRNN, a deep autoregressive model that addresses the above challenges and approximates any distribution of graphs with minimal assumptions about their structure. GraphRNN learns to generate graphs by training on a representative set of graphs and decomposes the graph generation process into a sequence of node and edge formations, conditioned on the graph structure generated so far. In order to quantitatively evaluate the performance of GraphRNN, we introduce a benchmark suite of datasets, baselines and novel evaluation metrics based on Maximum Mean Discrepancy, which measure distances between sets of graphs. Our experiments show that GraphRNN significantly outperforms all baselines, learning to generate diverse graphs that match the structural characteristics of a target set, while also scaling to graphs 50 times larger than previous deep models.},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/8NSP8XRL/You et al. - 2018 - GraphRNN Generating Realistic Graphs with Deep Au.pdf;/Users/phanthh/Zotero/storage/GBFH9B3Z/You et al_2018_GraphRNN.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/8NSP8XRL/You et al. - 2018 - GraphRNN Generating Realistic Graphs with Deep Au.pdf;/Users/phanthh/Academia/zotero/storage/GBFH9B3Z/You et al_2018_GraphRNN.pdf}
 }
 
 @inproceedings{zangMoFlowInvertibleFlow2020,
@@ -917,7 +1459,21 @@
   abstract = {Generating molecular graphs with desired chemical properties driven by deep graph generative models provides a very promising way to accelerate drug discovery process. Such graph generative models usually consist of two steps: learning latent representations and generation of molecular graphs. However, to generate novel and chemically-valid molecular graphs from latent representations is very challenging because of the chemical constraints and combinatorial complexity of molecular graphs. In this paper, we propose MoFlow, a flow-based graph generative model to learn invertible mappings between molecular graphs and their latent representations. To generate molecular graphs, our MoFlow first generates bonds (edges) through a Glow based model, then generates atoms (nodes) given bonds by a novel graph conditional flow, and finally assembles them into a chemically valid molecular graph with a posthoc validity correction. Our MoFlow has merits including exact and tractable likelihood training, efficient one-pass embedding and generation, chemical validity guarantees, 100\textbackslash\% reconstruction of training data, and good generalization ability. We validate our model by four tasks: molecular graph generation and reconstruction, visualization of the continuous latent space, property optimization, and constrained property optimization. Our MoFlow achieves state-of-the-art performance, which implies its potential efficiency and effectiveness to explore large chemical space for drug discovery.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Physics - Chemical Physics,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/ZK2DFFHR/Zang_Wang_2020_MoFlow.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/ZK2DFFHR/Zang_Wang_2020_MoFlow.pdf}
+}
+
+@article{zayatsConversationModelingReddit2018,
+  title = {Conversation {{Modeling}} on {{Reddit Using}} a {{Graph-Structured LSTM}}},
+  author = {Zayats, Victoria and Ostendorf, Mari},
+  year = {2018},
+  month = feb,
+  journal = {Transactions of the Association for Computational Linguistics},
+  volume = {6},
+  pages = {121--132},
+  issn = {2307-387X},
+  doi = {10.1162/tacl_a_00009},
+  abstract = {This paper presents a novel approach for modeling threaded discussions on social media using a graph-structured bidirectional LSTM (long-short term memory) which represents both hierarchical and temporal conversation structure. In experiments with a task of predicting popularity of comments in Reddit discussions, the proposed model outperforms a node-independent architecture for different sets of input features. Analyses show a benefit to the model over the full course of the discussion, improving detection in both early and late stages. Further, the use of language cues with the bidirectional tree state updates helps with identifying controversial comments.},
+  file = {/Users/phanthh/Academia/zotero/storage/4UATCNDP/Zayats and Ostendorf - 2018 - Conversation Modeling on Reddit Using a Graph-Stru.pdf;/Users/phanthh/Academia/zotero/storage/F3BUG6UV/Conversation-Modeling-on-Reddit-Using-a-Graph.html}
 }
 
 @misc{zhangApproximationCapabilitiesNeural2020,
@@ -934,7 +1490,7 @@
   abstract = {Neural ODEs and i-ResNet are recently proposed methods for enforcing invertibility of residual neural models. Having a generic technique for constructing invertible models can open new avenues for advances in learning systems, but so far the question of whether Neural ODEs and i-ResNets can model any continuous invertible function remained unresolved. Here, we show that both of these models are limited in their approximation capabilities. We then prove that any homeomorphism on a \$p\$-dimensional Euclidean space can be approximated by a Neural ODE operating on a \$2p\$-dimensional Euclidean space, and a similar result for i-ResNets. We conclude by showing that capping a Neural ODE or an i-ResNet with a single linear layer is sufficient to turn the model into a universal approximator for non-invertible continuous functions.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
-  file = {/Users/phanthh/Zotero/storage/H3WJ5ZR4/Zhang et al_2020_Approximation Capabilities of Neural ODEs and Invertible Residual Networks.pdf;/Users/phanthh/Zotero/storage/VN7RPPR9/1907.html}
+  file = {/Users/phanthh/Academia/zotero/storage/H3WJ5ZR4/Zhang et al_2020_Approximation Capabilities of Neural ODEs and Invertible Residual Networks.pdf;/Users/phanthh/Academia/zotero/storage/VN7RPPR9/1907.html}
 }
 
 @article{zhangDeepLearningGraphs2020,
@@ -951,7 +1507,7 @@
   doi = {10.1109/TKDE.2020.2981333},
   abstract = {Deep learning has been shown to be successful in a number of domains, ranging from acoustics, images, to natural language processing. However, applying deep learning to the ubiquitous graph data is non-trivial because of the unique characteristics of graphs. Recently, substantial research efforts have been devoted to applying deep learning methods to graphs, resulting in beneficial advances in graph analysis techniques. In this survey, we comprehensively review the different types of deep learning methods on graphs. We divide the existing methods into five categories based on their model architectures and training strategies: graph recurrent neural networks, graph convolutional networks, graph autoencoders, graph reinforcement learning, and graph adversarial methods. We then provide a comprehensive overview of these methods in a systematic manner mainly by following their development history. We also analyze the differences and compositions of different methods. Finally, we briefly outline the applications in which they have been used and discuss potential future research directions.},
   keywords = {deep learning,Deep learning,Distance measurement,graph autoencoder,graph convolutional network,Graph data,graph neural network,Recurrent neural networks,Reinforcement learning,Social networking (online),Task analysis,Training},
-  file = {/Users/phanthh/Zotero/storage/9F8GDS65/Zhang et al_2022_Deep Learning on Graphs.pdf;/Users/phanthh/Zotero/storage/X92JGH4W/Zhang et al. - 2022 - Deep Learning on Graphs A Survey.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/9F8GDS65/Zhang et al_2022_Deep Learning on Graphs.pdf;/Users/phanthh/Academia/zotero/storage/X92JGH4W/Zhang et al. - 2022 - Deep Learning on Graphs A Survey.pdf}
 }
 
 @inproceedings{zhangDiffusionNormalizingFlow2021,
@@ -963,7 +1519,25 @@
   pages = {16280--16291},
   publisher = {{Curran Associates, Inc.}},
   abstract = {We present a novel generative modeling method called diffusion normalizing flow based on stochastic differential equations (SDEs). The algorithm consists of two neural SDEs: a forward SDE that gradually adds noise to the data to transform the data into Gaussian random noise, and a backward SDE that gradually removes the noise to sample from the data distribution. By jointly training the two neural SDEs to minimize a common cost function that quantifies the difference between the two, the backward SDE converges to a diffusion process the starts with a Gaussian distribution and ends with the desired data distribution. Our method is closely related to normalizing flow and diffusion probabilistic models, and can be viewed as a combination of the two. Compared with normalizing flow, diffusion normalizing flow is able to learn distributions with sharp boundaries. Compared with diffusion probabilistic models, diffusion normalizing flow requires fewer discretization steps and thus has better sampling efficiency. Our algorithm demonstrates competitive performance in both high-dimension data density estimation and image generation tasks.},
-  file = {/Users/phanthh/Zotero/storage/KPV3L9ZS/Zhang_Chen_2021_Diffusion Normalizing Flow.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/KPV3L9ZS/Zhang_Chen_2021_Diffusion Normalizing Flow.pdf}
+}
+
+@misc{zhangGaANGatedAttention2018,
+  title = {{{GaAN}}: {{Gated Attention Networks}} for {{Learning}} on {{Large}} and {{Spatiotemporal Graphs}}},
+  shorttitle = {{{GaAN}}},
+  author = {Zhang, Jiani and Shi, Xingjian and Xie, Junyuan and Ma, Hao and King, Irwin and Yeung, Dit-Yan},
+  year = {2018},
+  month = mar,
+  number = {arXiv:1803.07294},
+  eprint = {1803.07294},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.1803.07294},
+  abstract = {We propose a new network architecture, Gated Attention Networks (GaAN), for learning on graphs. Unlike the traditional multi-head attention mechanism, which equally consumes all attention heads, GaAN uses a convolutional sub-network to control each attention head's importance. We demonstrate the effectiveness of GaAN on the inductive node classification problem. Moreover, with GaAN as a building block, we construct the Graph Gated Recurrent Unit (GGRU) to address the traffic speed forecasting problem. Extensive experiments on three real-world datasets show that our GaAN framework achieves state-of-the-art results on both tasks.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Social and Information Networks},
+  file = {/Users/phanthh/Academia/zotero/storage/T7KH7CQX/Zhang et al. - 2018 - GaAN Gated Attention Networks for Learning on Lar.pdf;/Users/phanthh/Academia/zotero/storage/XDUMEQF9/1803.html}
 }
 
 @article{zhouGraphNeuralNetworks2020,
@@ -980,7 +1554,24 @@
   abstract = {Lots of learning tasks require dealing with graph data which contains rich relation information among elements. Modeling physics systems, learning molecular fingerprints, predicting protein interface, and classifying diseases demand a model to learn from graph inputs. In other domains such as learning from non-structural data like texts and images, reasoning on extracted structures (like the dependency trees of sentences and the scene graphs of images) is an important research topic which also needs graph reasoning models. Graph neural networks (GNNs) are neural models that capture the dependence of graphs via message passing between the nodes of graphs. In recent years, variants of GNNs such as graph convolutional network (GCN), graph attention network (GAT), graph recurrent network (GRN) have demonstrated ground-breaking performances on many deep learning tasks. In this survey, we propose a general design pipeline for GNN models and discuss the variants of each component, systematically categorize the applications, and propose four open problems for future research.},
   langid = {english},
   keywords = {Deep learning,Graph neural network},
-  file = {/Users/phanthh/Zotero/storage/9D3SLJUQ/Zhou et al_2020_Graph neural networks.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/9D3SLJUQ/Zhou et al_2020_Graph neural networks.pdf}
+}
+
+@inproceedings{zhuangDualGraphConvolutional2018,
+  title = {Dual {{Graph Convolutional Networks}} for {{Graph-Based Semi-Supervised Classification}}},
+  booktitle = {Proceedings of the 2018 {{World Wide Web Conference}}},
+  author = {Zhuang, Chenyi and Ma, Qiang},
+  year = {2018},
+  month = apr,
+  series = {{{WWW}} '18},
+  pages = {499--508},
+  publisher = {{International World Wide Web Conferences Steering Committee}},
+  address = {{Republic and Canton of Geneva, CHE}},
+  doi = {10.1145/3178876.3186116},
+  abstract = {The problem of extracting meaningful data through graph analysis spans a range of different fields, such as the internet, social networks, biological networks, and many others. The importance of being able to effectively mine and learn from such data continues to grow as more and more structured data become available. In this paper, we present a simple and scalable semi-supervised learning method for graph-structured data in which only a very small portion of the training data are labeled. To sufficiently embed the graph knowledge, our method performs graph convolution from different views of the raw data. In particular, a dual graph convolutional neural network method is devised to jointly consider the two essential assumptions of semi-supervised learning: (1) local consistency and (2) global consistency. Accordingly, two convolutional neural networks are devised to embed the local-consistency-based and global-consistency-based knowledge, respectively. Given the different data transformations from the two networks, we then introduce an unsupervised temporal loss function for the ensemble. In experiments using both unsupervised and supervised loss functions, our method outperforms state-of-the-art techniques on different datasets.},
+  isbn = {978-1-4503-5639-8},
+  keywords = {adjacency matrix,graph convolutional networks,graph diffusion,pointwise mutual information,semi-supervised learning},
+  file = {/Users/phanthh/Academia/zotero/storage/PNJVRXEP/Zhuang and Ma - 2018 - Dual Graph Convolutional Networks for Graph-Based .pdf}
 }
 
 @misc{zhuSurveyDeepGraph2022,
@@ -998,7 +1589,7 @@
   abstract = {Graphs are ubiquitous in encoding relational information of real-world objects in many domains. Graph generation, whose purpose is to generate new graphs from a distribution similar to the observed graphs, has received increasing attention thanks to the recent advances of deep learning models. In this paper, we conduct a comprehensive review on the existing literature of graph generation from a variety of emerging methods to its wide application areas. Specifically, we first formulate the problem of deep graph generation and discuss its difference with several related graph learning tasks. Secondly, we divide the state-of-the-art methods into three categories based on model architectures and summarize their generation strategies. Thirdly, we introduce three key application areas of deep graph generation. Lastly, we highlight challenges and opportunities in the future study of deep graph generation.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Computer Science - Social and Information Networks,Quantitative Biology - Molecular Networks},
-  file = {/Users/phanthh/Zotero/storage/U2YX33JH/Zhu et al_2022_A Survey on Deep Graph Generation.pdf;/Users/phanthh/Zotero/storage/BTJ65JTZ/2203.html}
+  file = {/Users/phanthh/Academia/zotero/storage/U2YX33JH/Zhu et al_2022_A Survey on Deep Graph Generation.pdf;/Users/phanthh/Academia/zotero/storage/BTJ65JTZ/2203.html}
 }
 
 @inproceedings{zieglerLatentNormalizingFlows2019,
@@ -1012,7 +1603,7 @@
   issn = {2640-3498},
   abstract = {Normalizing flows are a powerful class of generative models for continuous random variables, showing both strong model flexibility and the potential for non-autoregressive generation. These benefits are also desired when modeling discrete random variables such as text, but directly applying normalizing flows to discrete sequences poses significant additional challenges. We propose a VAE-based generative model which jointly learns a normalizing flow-based distribution in the latent space and a stochastic mapping to an observed discrete space. In this setting, we find that it is crucial for the flow-based distribution to be highly multimodal. To capture this property, we propose several normalizing flow architectures to maximize model flexibility. Experiments consider common discrete sequence tasks of character-level language modeling and polyphonic music generation. Our results indicate that an autoregressive flow-based model can match the performance of a comparable autoregressive baseline, and a non-autoregressive flow-based model can improve generation speed with a penalty to performance.},
   langid = {english},
-  file = {/Users/phanthh/Zotero/storage/6Q2LEUV5/Ziegler and Rush - 2019 - Latent Normalizing Flows for Discrete Sequences.pdf;/Users/phanthh/Zotero/storage/VA6I9VFZ/Ziegler_Rush_2019_Latent Normalizing Flows for Discrete Sequences.pdf}
+  file = {/Users/phanthh/Academia/zotero/storage/6Q2LEUV5/Ziegler and Rush - 2019 - Latent Normalizing Flows for Discrete Sequences.pdf;/Users/phanthh/Academia/zotero/storage/VA6I9VFZ/Ziegler_Rush_2019_Latent Normalizing Flows for Discrete Sequences.pdf}
 }
 
 
